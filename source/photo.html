@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - фотогалерея</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Логотип PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">ГЛАВНАЯ</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>ФОТОГРАФИИ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">КОНКУРС</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-photo">
+      <h1 class="page-photo__title">Фотографии пользователей</h1>
+      <p class="page-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="photo">
+        <ul class="photo__list">
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Анна">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Анна</cite>
+              <time class="photo__time">(5 МИНУТ НАЗАД)</time>
+              <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">215</span>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Левон">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Левон</cite>
+              <time class="photo__time">(5 ЧАСОВ НАЗАД)</time>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">356</span>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Антон">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Антон</cite>
+              <time class="photo__time">(12 ЧАСОВ НАЗАД)</time>
+              <p class="photo__text">Соседи будут рады!</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">666</span>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Борис">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Борис</cite>
+              <time class="photo__time">(20 ЧАСОВ НАЗАД)</time>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">215</span>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Сергей">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Сергей</cite>
+              <time class="photo__time">(25 ЧАСОВ НАЗАД)</time>
+              <p class="photo__text">Самая кубанская в мире!</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">4</span>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Максим">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Максим</cite>
+              <time class="photo__time">(40 ЧАСОВ НАЗАД)</time>
+              <p class="photo__text">Где снег-то?</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">150</span>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Фотография пользователя Надежда">
+            <blockquote class="photo__review">
+              <cite class="photo__author">Надежда</cite>
+              <time class="photo__time">(45 ЧАСОВ НАЗАД)</time>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+            </blockquote>
+            <div class="like">
+              <span class="like__icon"></span>
+              <span class="like__text">НРАВИТСЯ:</span>
+              <span class="like__count">2560</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="photo-footer">
+      <a>
+        <img src="http://placehold.it/200x50" width="200px" height="50px" alt="Логотип">
+      </a>
+      <ul class="footer-socials">
+        <li class="socials-item">
+          <a href="#">
+            <img src="http://placehold.it/100x100" width="100px" height="100px" alt="Наш Twitter">
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <img src="http://placehold.it/100x100" width="100px" height="100px" alt="Наш Facebook">
+          </a>
+        </li>
+        <li class="socials-item">
+          <a href="#">
+            <img src="http://placehold.it/100x100" width="100px" height="100px" alt="Наш Play">
+          </a>
+        </li>
+      </ul>
+      <div class="footer-developers">
+        <span class="developers-text">Разработано</span>
+        <a href="#">
+          <img src="http://placehold.it/70x70" width="70px" height="70px" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
