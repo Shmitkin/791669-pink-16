@@ -12,8 +12,8 @@
       <nav class="main-nav">
         <button class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>ГЛАВНАЯ</a>
+          <li class="site-list__item">
+            <a class="site-list__item--active">ГЛАВНАЯ</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">ФОТОГРАФИИ</a>
@@ -22,16 +22,16 @@
             <a href="form.html">КОНКУРС</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink - Раскрась все в розовый цвет!</h1>
-      <section class="promo page-main__promo">
+      <div class="promo page-main__promo">
         <img src="http://placehold.it/300x500" width="300px" height="500px" alt="Промо демонстрация приложения">
-        <button class="promo__download-button">Скачать приложение</button>
+        <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
         <ul class="promo-icons">
           <li class="promo-icons__item">
             <a href="#">
@@ -50,11 +50,11 @@
           </li>
         </ul>
         <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+      </div>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <h2 class="advantages__question">Устали от серости мегаполиса?</h2>
-        <h2 class="advantages__answer">Нам есть, что вам предложить!</h2>
+        <p class="advantages__question">Устали от серости мегаполиса?</p>
+        <p class="advantages__answer">Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
