@@ -5,8 +5,72 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Логотип PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__item--active">ГЛАВНАЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">ФОТОГРАФИИ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">КОНКУРС</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Pink - Раскрась все в розовый цвет!</h1>
+      <div class="promo page-main__promo">
+        <img src="http://placehold.it/300x500" width="300px" height="500px" alt="Промо демонстрация приложения">
+        <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
+        <ul class="promo-icons">
+          <li class="promo-icons__item">
+            <a href="#">
+              <img src="http://placehold.it/50x50" width="50px" height="50px" alt="Иконка загрузки приложения для IOS">
+            </a>
+          </li>
+          <li class="promo-icons__item">
+            <a href="#">
+              <img src="http://placehold.it/50x50" width="50px" height="50px" alt="Иконка загрузки прилождения для Android">
+            </a>
+          </li>
+          <li class="promo-icons__item">
+            <a href="#">
+              <img src="http://placehold.it/50x50" width="50px" height="50px" alt="Иконка загрузки приложения для Windows Phone">
+            </a>
+          </li>
+        </ul>
+        <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__question">Устали от серости мегаполиса?</p>
+        <p class="advantages__answer">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депресию буквально в несколько кликов</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img src="http://placehold.it/300x500" width="300px" height="500px" alt="Экран смартфона с приложением PINK">
+      </section>
+    </main>
   </body>
 </html>
