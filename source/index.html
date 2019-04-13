@@ -2,27 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Логотип PINK">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item--active">ГЛАВНАЯ</a>
+            <a class="site-list__link site-list__link--active">ГЛАВНАЯ</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">ФОТОГРАФИИ</a>
+            <a class="site-list__link" href="photo.html">ФОТОГРАФИИ</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">КОНКУРС</a>
+            <a class="site-list__link" href="form.html">КОНКУРС</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -30,26 +31,28 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink - Раскрась все в розовый цвет!</h1>
       <div class="promo page-main__promo">
-        <img src="http://placehold.it/300x500" width="300px" height="500px" alt="Промо демонстрация приложения">
-        <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
-        <ul class="promo-icons">
-          <li class="promo-icons__item">
-            <a href="#">
-              <img src="http://placehold.it/50x50" width="50px" height="50px" alt="Иконка загрузки приложения для IOS">
-            </a>
-          </li>
-          <li class="promo-icons__item">
-            <a href="#">
-              <img src="http://placehold.it/50x50" width="50px" height="50px" alt="Иконка загрузки прилождения для Android">
-            </a>
-          </li>
-          <li class="promo-icons__item">
-            <a href="#">
-              <img src="http://placehold.it/50x50" width="50px" height="50px" alt="Иконка загрузки приложения для Windows Phone">
-            </a>
-          </li>
-        </ul>
+        <img class="promo__image" src="img/iphone-hand-mobile@1x.png" width="258px" height="286px" alt="Промо демонстрация приложения">
+        <div class="promo__wrapper">
+          <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
+          <ul class="promo-icons">
+            <li class="promo-icons__item">
+              <a class="promo-icons__link" href="#">
+                <img src="img/logo-apple.svg" width="48px" height="56px" alt="Иконка загрузки приложения для IOS">
+              </a>
+            </li>
+            <li class="promo-icons__item">
+              <a class="promo-icons__link" href="#">
+                <img src="img/logo-android.svg" width="43px" height="47px" alt="Иконка загрузки прилождения для Android">
+              </a>
+            </li>
+            <li class="promo-icons__item">
+              <a class="promo-icons__link" href="#">
+                <img src="img/logo-microsoft.svg" width="44px" height="41px" alt="Иконка загрузки приложения для Windows Phone">
+              </a>
+            </li>
+          </ul>
         <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
