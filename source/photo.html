@@ -111,6 +111,21 @@
           </li>
         </ul>
       </div>
+      <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
+        <legend class="post-form__legends">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</legend>
+        <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+        <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
+        <fieldset class="post-form__fieldset">
+          <label class="post-form__label" for="crop"></label>
+          <input class="post-form__input" type="range" name="crop" id="crop" min="1" max="100" step="1">
+          <label class="post-form__label" for="fill"></label>
+          <input class="post-form__input" type="range" name="fill" id="fill" min="1" max="100" step="1">
+          <label class="post-form__label" for="wb"></label>
+          <input class="post-form__input" type="range" name="wb" id="wb" min="1" max="100" step="1">
+        </fieldset>
+        <button class="post-form__button post-form__button--disabled">Запостить</button>
+        <button class="post-form__button post-form__button--disabled">Отмена</button>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
