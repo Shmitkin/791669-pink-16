@@ -13,16 +13,16 @@
         <button class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item--active">ГЛАВНАЯ</a>
+            <a class="site-list__item--active">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">ФОТОГРАФИИ</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">КОНКУРС</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML ACADEMY</a>
+            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">html academy</a>
           </li>
         </ul>
       </nav>
@@ -69,7 +69,120 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="http://placehold.it/300x500" width="300px" height="500px" alt="Экран смартфона с приложением PINK">
+        <img src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+          <ul class="reviews__list reviews-slider">
+            <li class="reviews__item reviews-slider__item">
+              <cite class="reviews__author">Николай Петров</cite>
+              <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider-toggles">
+            <button class="slider-toggles__button" type="button">1</button>
+            <button class="slider-toggles__button" type="button">2</button>
+            <button class="slider-toggles__button" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="pricing">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <div class="pricing__wrapper">
+          <table class="pricing-table">
+            <tr class="pricing-table__header-row">
+              <td class="pricing-table__header-data">
+              </td>
+              <td class="pricing-table__header-data">
+                <h3 pricing-table__title>База</h3>
+                <p class="pricing-table__header-cost">1,99 USD</p>
+              </td>
+              <td class="pricing-table__header-data">
+                <h3 pricing-table__title>Стандарт</h3>
+                <p class="pricing-table__header-cost">3,99 USD</p>
+              </td>
+              <td class="pricing-table__header-data">
+                <h3 pricing-table__title>Анлим</h3>
+                <p class="pricing-table__header-cost">9,99 USD</p>
+              </td>
+            </tr>
+            <tr class="pricing-table__row">
+              <td class="pricing-table__data">
+                <p class="pricing-table__text">Розовый текст</p>
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-yes.svg">
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-yes.svg">
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-yes.svg">
+              </td>
+            </tr>
+            <tr class="pricing-table__row">
+              <td class="pricing-table__data">
+                <p class="pricing-table__text">Смайлики</p>
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-no.svg">
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-yes.svg">
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-yes.svg">
+              </td>
+            </tr>
+            <tr class="pricing-table__row">
+              <td class="pricing-table__data">
+                <p class="pricing-table__text">Комментарии</p>
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-no.svg">
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-no.svg">
+              </td>
+              <td class="pricing-table__data">
+                <img class="pricing-table__image" src="img/icon-yes.svg">
+              </td>
+            </tr>
+          </table>
+          <p class="pricing__toggles slider-toggles">
+            <button class="slider-toggles__button" type="button">1</button>
+            <button class="slider-toggles__button" type="button">2</button>
+            <button class="slider-toggles__button" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">Звоните:
+                <a class="contacts__address" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Пишите:
+                <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">Приезжайте в гости:
+                <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <img src="img/bg-map-mobile@1x.png" width="320px" height="645px" alt="Карта с указанием нашего расположения">
+        </div>
       </section>
     </main>
   </body>
