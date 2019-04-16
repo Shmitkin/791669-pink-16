@@ -7,11 +7,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+        </a>
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__item--active">Главная</a>
@@ -72,7 +74,7 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+        <img class="advantages__image"src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
@@ -93,35 +95,38 @@
       </section>
       <section class="pricing">
         <h2 class="visually-hidden">Наши тарифы</h2>
-        <div class="pricing__wrapper">
+        <div class="pricing-table__wrapper">
           <table class="pricing-table">
             <tr class="pricing-table__header-row">
               <td class="pricing-table__header-data">
               </td>
               <td class="pricing-table__header-data">
-                <h3 pricing-table__title>База</h3>
+                <h3 class="pricing-table__title">База</h3>
                 <p class="pricing-table__header-cost">1,99 USD</p>
               </td>
               <td class="pricing-table__header-data">
-                <h3 pricing-table__title>Стандарт</h3>
+                <h3 class="pricing-table__title">Стандарт</h3>
                 <p class="pricing-table__header-cost">3,99 USD</p>
               </td>
               <td class="pricing-table__header-data">
-                <h3 pricing-table__title>Анлим</h3>
+                <h3 class="pricing-table__title">Анлим</h3>
                 <p class="pricing-table__header-cost">9,99 USD</p>
               </td>
             </tr>
             <tr class="pricing-table__row">
               <td class="pricing-table__data">
-                <p class="pricing-table__text">Розовый текст</p>
+                <p class="pricing-table__text">Розовый фильтр</p>
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Розовый фильтр</p>
                 <img class="pricing-table__image" src="img/icon-yes.svg">
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Розовый фильтр</p>
                 <img class="pricing-table__image" src="img/icon-yes.svg">
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Розовый фильтр</p>
                 <img class="pricing-table__image" src="img/icon-yes.svg">
               </td>
             </tr>
@@ -130,12 +135,15 @@
                 <p class="pricing-table__text">Смайлики</p>
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Смайлики</p>
                 <img class="pricing-table__image" src="img/icon-no.svg">
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Смайлики</p>
                 <img class="pricing-table__image" src="img/icon-yes.svg">
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Смайлики</p>
                 <img class="pricing-table__image" src="img/icon-yes.svg">
               </td>
             </tr>
@@ -144,12 +152,15 @@
                 <p class="pricing-table__text">Комментарии</p>
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Комментарии</p>
                 <img class="pricing-table__image" src="img/icon-no.svg">
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Комментарии</p>
                 <img class="pricing-table__image" src="img/icon-no.svg">
               </td>
               <td class="pricing-table__data">
+                <p class="pricing-table__text">Комментарии</p>
                 <img class="pricing-table__image" src="img/icon-yes.svg">
               </td>
             </tr>
@@ -167,19 +178,17 @@
           <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <p class="contacts__text">Звоните:
-                <a class="contacts__address" href="tel:+78125556666">+7 (812) 555-66-66</a>
-              </p>
+              <p class="contacts__text">Звоните:</p>
+              <a class="contacts__address" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
-              <p class="contacts__text">Пишите:
-                <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
+              <p class="contacts__text">Пишите:</p>
+              <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
-              <p class="contacts__text">Приезжайте в гости:
-                <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
-              </p>
+              <p class="contacts__text">Приезжайте в гости:</p>
+              <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+
             </li>
           </ul>
         </div>
