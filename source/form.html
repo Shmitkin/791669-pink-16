@@ -35,7 +35,7 @@
         <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <form class="contest-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-        <fieldset class="contest-form__name-container">
+        <div class="contest-form__name-container">
           <legend class="contest-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</legend>
           <label class="contest-form__label" for="last-name">Фамилия:</label>
           <input class="contest-form__input" id="last-name" name="last-name" type="text" placeholder="Укажите фамилию" required>
@@ -43,8 +43,8 @@
           <input class="contest-form__input" id="first-name" name="first-name" type="text" placeholder="Введите ваше имя" required>
           <label class="contest-form__label" for="middle-name">Отчество:</label>
           <input class="contest-form__input" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
-        </fieldset>
-        <fieldset class="contest-form__achievement-container">
+        </div>
+        <div class="contest-form__achievement-container">
           <legend class="contest-form__description">Ваши безбашенные достижения в путешествии</legend>
           <input class="contest-form__checkbox" type="checkbox" name="achievements" value="shark-selfie" id="shark-selfie">
           <label class="contest-form__checkbox-label" for="shark-selfie">Сделал селфи с акулой</label>
@@ -58,14 +58,14 @@
           <label class="contest-form__checkbox-label" for="hold-the-tower">Удержал башню</label>
           <input class="contest-form__checkbox" type="checkbox" name="achievements" value="hotel-destroy" id="hotel-destroy">
           <label class="contest-form__checkbox-label" for="hotel-destroy">Разгромил отель</label>
-        </fieldset>
-        <fieldset class="contest-form__contacts-container">
+        </div>
+        <div class="contest-form__contacts-container">
           <label class="contest-form__label" for="tel">Номер телефона</label>
           <input class="contest-form__input" id="tel" name="tel" type="tel" placeholder="Номер, пожалуйста">
           <label class="contest-form__label" for="email">Адрес почты</label>
           <input class="contest-form__input" id="email" name="email" type="email" placeholder="Введите почту" required>
-        </fieldset>
-        <fieldset class="contest-form__platform-container">
+        </div>
+        <div class="contest-form__platform-container">
           <legend class="contest-form__description">С каким приложением путешествовали?</legend>
           <input class="contest-form__platform-checkbox" type="checkbox" name="platform" value="ios" id="ios">
           <label class="contest-form__checkbox-label" for="ios">Pink для iOS</label>
@@ -73,14 +73,14 @@
           <label class="contest-form__checkbox-label" for="android">Pink для Android</label>
           <input class="contest-form__platform-checkbox" type="checkbox" name="platform" value="windows-phone" id="windows-phone">
           <label class="contest-form__checkbox-label" for="windows-phone">Windows Phone</label>
-        </fieldset>
-        <fieldset class="contest-form__review-container">
+        </div>
+        <div class="contest-form__review-container">
           <label class="contest-form__label" for="review">Опишите свои эмоции</label>
           <textarea class="contest-form__review" id="review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях">
           </textarea>
-        </fieldset>
+        </div>
         <button class="contest-form__submit" type="submit">Отправить форму</button>
-        <p class="contest-form__required">* - Обязательные поля</p>
+        <p class="contest-form__required">* — Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">

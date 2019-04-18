@@ -3,46 +3,49 @@
 }
 
 .photo__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .photo__item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
-  position: relative;
 }
 
 .photo__review {
   width: 280px;
-  padding: 20px 10px 50px 15px;
+  margin-top: 0;
   margin-bottom: 20px;
-  margin-top: 0px;
+  padding: 20px 10px 50px 15px;
+
   background-color: #f2f2f2;
 }
 .photo__author {
-  font-size: 14px;
-  font-weight: 700;
-  color: #283645;
   font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #283645;
 }
 
 .photo__time {
-  font-size: 12px;
   font-weight: 300;
-  text-transform: uppercase;
+  font-size: 12px;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .photo__text {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -50,22 +53,26 @@
   position: absolute;
   bottom: 40px;
   left: 60px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+
   background: none;
   border: none;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #d22856;
 }
 
 .photo__like-button:before {
   content: "";
+  position: absolute;
+  top: 7px;
+  left: -20px;
+
   display: block;
   width: 13px;
   height: 13px;
+
   background: url(../img/icon-heart.svg) no-repeat;
-  position: absolute;
-  left: -20px;
-  top: 7px;
 }

@@ -1,11 +1,13 @@
 .main-nav {
-  min-width: 320px;
-  background-color: #283645;
-  display: flex;
-  flex-direction: column;
   position: absolute;
   z-index: 10;
-//  display: none;
+
+  display: flex;
+  display: none;
+  flex-direction: column;
+  min-width: 320px;
+
+  background-color: #283645;
 }
 
 .main-nav__list {
@@ -14,16 +16,18 @@
 }
 
 .main-nav__toggle {
-  display: block;
   position: absolute;
-  border: none;
   top: 22px;
   left: 250px;
-//  left: 270px;
+
+  display: block;
+  //  left: 270px;
   width: 44px;
-//  width: 24px;
+  //  width: 24px;
   height: 24px;
-  background-color: transparent;
-//  background: url(../img/icon-menu-cross.svg) no-repeat;
+  //  background: url(../img/icon-menu-cross.svg) no-repeat;
+
   background: url(../img/icon-menu-burger.svg) no-repeat;
+  background-color: transparent;
+  border: none;
 }
