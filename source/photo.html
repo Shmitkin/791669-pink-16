@@ -116,47 +116,44 @@
           </li>
         </ul>
       </div>
-      <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-        <legend class="post-form__legends">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</legend>
-        <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
-        <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
-        <label class="post-form__drop-zone" for="user-photo">Загрузите или перетащите сюда фото</label>
-        <fieldset class="post-form__fieldset">
-          <button class="post-form__button-fill" type="button">Заливка</button>
-          <button class="post-form__button-crop" type="button">Обрезка</button>
-          <button class="post-form__button-brightness" type="button">Яркость</button>
-          <input class="post-form__input" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
-        </fieldset>
-        <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
-        <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
-      </form>
+      <div class="post-form__wrapper">
+        <p class="post-form__title">Затмите их всех!</p>
+        <p class="post-form__title">Выкладывайте все, что накопилось в телефоне!</p>
+        <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
+          <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+          <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
+          <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
+          <fieldset class="post-form__fieldset">
+            <div class="post-form__button-wrapper">
+              <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
+              <button class="post-form__button-fill post-form__button-adjustment" type="button"><span class="visually-hidden">Обрезка</span></button>
+              <button class="post-form__button-contrast post-form__button-adjustment" type="button"><span class="visually-hidden">Яркость</span></button>
+            </div>
+            <input class="post-form__adjustment" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
+          </fieldset>
+          <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
+          <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+        </form>
+      </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="http://placehold.it/200x50" width="200px" height="50px" alt="Логотип">
+        <img src="img/logo-pink-blue-mobile.svg" width="140px" height="50px" alt="Логотип">
       </a>
       <ul class="socials page-footer__socials">
         <li class="socials__item">
-          <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="http://placehold.it/100x100" width="50px" height="50px" alt="Наш Twitter">
-          </a>
+          <a class="socials__link socials__link-twitter" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="http://placehold.it/100x100" width="50px" height="50px" alt="Наш Facebook">
-          </a>
+          <a class="socials__link socials__link-facebook" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="http://placehold.it/100x100" width="50px" height="50px" alt="Наш Play">
-          </a>
+          <a class="socials__link socials__link-youtube" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
       </ul>
       <div class="page-footer__developers">
         <span>Разработано</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="http://placehold.it/70x70" width="30px" height="36px" alt="Логотип htmlacademy">
-        </a>
+        <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer"></a>
       </div>
     </footer>
   </body>
