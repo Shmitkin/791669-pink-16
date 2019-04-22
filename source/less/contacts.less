@@ -35,3 +35,29 @@
   color: #283645;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__title {
+    width: 500px;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+}
