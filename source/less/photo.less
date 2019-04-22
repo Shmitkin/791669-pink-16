@@ -1,5 +1,6 @@
 .photo {
   background-color: #ffffff;
+  width: 320px;
 }
 
 .photo__list {
@@ -8,59 +9,66 @@
   align-items: center;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .photo__item {
   position: relative;
-
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
 }
 
 .photo__review {
-  width: 280px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding: 20px 10px 50px 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 20px 0;
+  padding: 20px 10px 20px 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
   background-color: #f2f2f2;
 }
 
 .photo__author {
+  display: flex;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   color: #283645;
+  margin-right: 10px;
+
 }
 
 .photo__time {
+  display: flex;
   font-weight: 300;
   font-size: 12px;
   color: #283645;
   text-transform: uppercase;
+  margin-top: 2px;
+
 }
 
 .photo__text {
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  width: 240px;
+
 }
 
 .photo__like-button {
-  position: absolute;
-  bottom: 40px;
-  left: 60px;
-
+  display: flex;
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
-
+  margin-left: 20px;
   background: none;
   border: none;
 }
@@ -77,3 +85,31 @@
 
   background: url("../img/icon-heart.svg") no-repeat;
 }
+
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 660px;
+  }
+
+  .photo__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo__item {
+    width: 300px;
+    margin: 10px auto;
+    min-height: 455px;
+    background-color: green;
+  }
+
+  .photo__like-button {
+  }
+
+  .photo__item--panorama {
+    width: 620px;
+  }
+
+}
+
