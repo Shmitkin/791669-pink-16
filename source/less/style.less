@@ -1,0 +1,77 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/*Подключаем нестандартные шрифты*/
+
+@font-face {
+  font-style: light;
+  font-weight: 300;
+  font-family: "OpenSans";
+
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "OpenSans";
+
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "OpenSans";
+
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+@import "page-header.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "page-main.less";
+@import "promo.less";
+@import "promo-icons.less";
+@import "advantages.less";
+@import "reviews.less";
+@import "pricing.less";
+@import "contacts.less";
+@import "page-photo.less";
+@import "photo.less";
+@import "page-footer.less";
+@import "socials.less";
+@import "post-form.less";
+@import "page-form.less";
+@import "contest-form.less";

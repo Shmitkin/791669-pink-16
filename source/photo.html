@@ -2,156 +2,158 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк - фотогалерея</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150px" height="100px" alt="Логотип PINK">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+        </a>
+        <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item--active">Фотографии</a>
+            <a class="site-list__link site-list__link--active">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">html academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">html academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-photo">
       <h1 class="page-photo__title">Фотографии пользователей</h1>
-      <p class="page-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="page-photo__description-wrapper">
+        <p class="page-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
       <div class="photo">
         <ul class="photo__list">
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Панорамная фоторгафия висячего моста и гусотго леса под ним">
+            <img class="photo__item-panorama" src="img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Панорамная фоторгафия висячего моста и гусотго леса под ним">
             <blockquote class="photo__review">
               <cite class="photo__author">Анна</cite>
               <time datetime="2019" class="photo__time">(5 минут назад)</time>
               <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">215</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">215</span>
             </button>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Белая машина на фоне серой стены">
+            <img src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Белая машина на фоне серой стены">
             <blockquote class="photo__review">
               <cite class="photo__author">Левон</cite>
               <time datetime="2019" class="photo__time">(5 часов назад)</time>
               <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">356</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">356</span>
             </button>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Барабанная установка">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Барабанная установка">
             <blockquote class="photo__review">
               <cite class="photo__author">Антон</cite>
               <time datetime="2019" class="photo__time">(12 часов назад)</time>
               <p class="photo__text">Соседи будут рады!</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">666</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">666</span>
             </button>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Прозрачная крыша и вид на голубое небо с небольшими облаками">
+            <img src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Прозрачная крыша и вид на голубое небо с небольшими облаками">
             <blockquote class="photo__review">
               <cite class="photo__author">Борис</cite>
               <time datetime="2019" class="photo__time">(20 часов назад)</time>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">215</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">215</span>
             </button>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Оранжевый тент с бахчевым развалом под ним в поле">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Оранжевый тент с бахчевым развалом под ним в поле">
             <blockquote class="photo__review">
               <cite class="photo__author">Сергей</cite>
               <time datetime="2019" class="photo__time">(25 часов назад)</time>
               <p class="photo__text">Самая кубанская в мире!</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">4</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">4</span>
             </button>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Две ноги на фоне обрыва с густой растительностью">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Две ноги на фоне обрыва с густой растительностью">
             <blockquote class="photo__review">
               <cite class="photo__author">Максим</cite>
               <time datetime="2019" class="photo__time">(40 часов назад)</time>
               <p class="photo__text">Где снег-то?</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">150</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">150</span>
             </button>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/300x200" width="300px" height="200px" alt="Крыло самолета в небе и закатное солнце">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Крыло самолета в небе и закатное солнце">
             <blockquote class="photo__review">
               <cite class="photo__author">Надежда</cite>
               <time datetime="2019" class="photo__time">(45 часов назад)</time>
               <p class="photo__text">Всем GM и взаимные лайки!</p>
             </blockquote>
-            <button class="like-button">нравится:
-                <span class="like-button__count">2560</span>
+            <button class="photo__like-button">нравится:
+                <span class="photo__like-count">2560</span>
             </button>
           </li>
         </ul>
       </div>
       <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-        <legend class="post-form__legends">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</legend>
-        <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
-        <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
-        <label class="post-form__drop-zone" for="user-photo">Загрузите или перетащите сюда фото</label>
-        <fieldset class="post-form__fieldset">
-          <button class="post-form__button-fill" type="button">Заливка</button>
-          <button class="post-form__button-crop" type="button">Обрезка</button>
-          <button class="post-form__button-brightness" type="button">Яркость</button>
-          <input class="post-form__input" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
-        </fieldset>
-        <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
-        <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+        <p class="post-form__title">Затмите их всех!</p>
+        <p class="post-form__title">Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="post-form__wrapper">
+            <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+            <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
+            <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
+            <fieldset class="post-form__fieldset">
+              <div class="post-form__button-wrapper">
+                <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
+                <button class="post-form__button-fill post-form__button-adjustment" type="button"><span class="visually-hidden">Обрезка</span></button>
+                <button class="post-form__button-contrast post-form__button-adjustment" type="button"><span class="visually-hidden">Яркость</span></button>
+              </div>
+              <input class="post-form__adjustment" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
+            </fieldset>
+            <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
+            <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="http://placehold.it/200x50" width="200px" height="50px" alt="Логотип">
+        <img src="img/logo-pink-blue-mobile.svg" width="140px" height="50px" alt="Логотип">
       </a>
-      <ul class="footer-socials">
-        <li class="socials-item">
-          <a class="socials-item__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="http://placehold.it/100x100" width="100px" height="100px" alt="Наш Twitter">
-          </a>
+      <ul class="socials page-footer__socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
-        <li class="socials-item">
-          <a class="socials-item__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="http://placehold.it/100x100" width="100px" height="100px" alt="Наш Facebook">
-          </a>
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
-        <li class="socials-item">
-          <a class="socials-item__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="http://placehold.it/100x100" width="100px" height="100px" alt="Наш Play">
-          </a>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
       </ul>
       <div class="page-footer__developers">
         <span>Разработано</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="http://placehold.it/70x70" width="70px" height="70px" alt="Логотип htmlacademy">
-        </a>
+        <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer"></a>
       </div>
     </footer>
   </body>
