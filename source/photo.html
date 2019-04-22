@@ -11,7 +11,7 @@
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
         </a>
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -19,7 +19,7 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__item--active">Фотографии</a>
+            <a class="site-list__link site-list__link--active">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурс</a>
@@ -116,25 +116,25 @@
           </li>
         </ul>
       </div>
-      <div class="post-form__wrapper">
+      <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
         <p class="post-form__title">Затмите их всех!</p>
         <p class="post-form__title">Выкладывайте все, что накопилось в телефоне!</p>
-        <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-          <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
-          <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
-          <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
-          <fieldset class="post-form__fieldset">
-            <div class="post-form__button-wrapper">
-              <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
-              <button class="post-form__button-fill post-form__button-adjustment" type="button"><span class="visually-hidden">Обрезка</span></button>
-              <button class="post-form__button-contrast post-form__button-adjustment" type="button"><span class="visually-hidden">Яркость</span></button>
-            </div>
-            <input class="post-form__adjustment" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
-          </fieldset>
-          <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
-          <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
-        </form>
-      </div>
+        <div class="post-form__wrapper">
+            <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+            <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
+            <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
+            <fieldset class="post-form__fieldset">
+              <div class="post-form__button-wrapper">
+                <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
+                <button class="post-form__button-fill post-form__button-adjustment" type="button"><span class="visually-hidden">Обрезка</span></button>
+                <button class="post-form__button-contrast post-form__button-adjustment" type="button"><span class="visually-hidden">Яркость</span></button>
+              </div>
+              <input class="post-form__adjustment" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
+            </fieldset>
+            <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
+            <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+        </div>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
@@ -142,13 +142,13 @@
       </a>
       <ul class="socials page-footer__socials">
         <li class="socials__item">
-          <a class="socials__link socials__link-twitter" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a class="socials__link socials__link--twitter" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link-facebook" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a class="socials__link socials__link--facebook" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link-youtube" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a class="socials__link socials__link--youtube" href="#" target="_blank" rel="noopener noreferrer"></a>
         </li>
       </ul>
       <div class="page-footer__developers">
