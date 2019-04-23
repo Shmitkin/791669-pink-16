@@ -35,3 +35,46 @@
   color: #283645;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    width: 500px;
+    margin-bottom: 40px;
+
+    font-size: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    width: 920px;
+  }
+
+  .contacts__list {
+    justify-content: space-between;
+    width: 920px;
+  }
+
+  .contacts__item--center {
+    order: 1;
+  }
+}

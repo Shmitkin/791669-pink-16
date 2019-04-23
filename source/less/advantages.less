@@ -2,25 +2,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 
   background-color: #f2f2f2;
 }
 
 .advantages__main-title {
+  margin: 0 0 45px 0;
+
   font-weight: 300;
   font-size: 24px;
   text-align: center;
 }
 
-.advantages__list {
+.advantages__second-title {
+  margin-bottom: 120px;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 280px;
-  margin: 0;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 0 20px 0;
   padding: 0;
 
   list-style: none;
 }
 
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.advantages__image-item--disabled {
+  display: none;
+}
+
 .advantages__title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -32,4 +63,86 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .advantages__main-title {
+    margin: 0;
+
+    font-size: 40px;
+  }
+
+  .advantages__second-title {
+    width: 350px;
+    margin-bottom: 60px;
+  }
+
+  .advantages__wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .advantages__image {
+    width: 268px;
+    height: 540px;
+  }
+
+  .advantages__list {
+    align-items: flex-start;
+  }
+
+  .advantages__item {
+    align-items: flex-start;
+  }
+
+  .advantages__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .advantages__item {
+    align-items: center;
+    width: 240px;
+
+    text-align: center;
+
+    border: 2px solid red;
+  }
+
+  .advantages__image {
+    width: 180px;
+    height: 305px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+
+    border: 2px solid yellow;
+  }
+
+  .advantages__image-item--disabled {
+    display: block;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }

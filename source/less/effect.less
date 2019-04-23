@@ -1,0 +1,67 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    padding: 20px 20px;
+
+    background-color: #ffffff;
+  }
+
+  .effect__timer {
+    width: 240px;
+    height: 278px;
+
+    background-color: black;
+  }
+
+  .effect__investigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 310px;
+  }
+
+  .effect__title {
+    width: 180px;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .effect__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    width: 940px;
+
+    background: none;
+  }
+
+  .effect__investigation {
+    width: 500px;
+  }
+
+  .effect__title {
+    width: 500px;
+  }
+
+  .effect__timer {
+    width: 300px;
+    height: 350px;
+  }
+}
