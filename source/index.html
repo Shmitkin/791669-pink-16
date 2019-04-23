@@ -38,6 +38,7 @@
         <div class="promo page-main__promo">
           <img class="promo__image" src="img/iphone-hand-mobile@1x.png" width="258px" height="286px" alt="Промо демонстрация приложения">
           <div class="promo__wrapper">
+            <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
             <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
             <ul class="promo-icons">
               <li class="promo-icons__item">
@@ -78,7 +79,25 @@
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотграфиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <img class="advantages__image"src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__image-item--disabled">
+                <img class="advantages__image"src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+              </li>
+              <li class="advantages__item advantages__image-item--disabled">
+                <img class="advantages__image"src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__image"src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__effect effect">
+            <div class="effect__timer"></div>
+            <div class="effect__investigation">
+              <h3 class="effect__title">Эффект на 24 часа!</h3>
+              <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="effect__link" href="#">Узнать больше об исследовании</a>
+            </div>
           </div>
         </section>
         <section class="reviews">
@@ -86,7 +105,10 @@
             <h2 class="visually-hidden">Отзывы наших пользователей</h2>
             <ul class="reviews__list reviews-slider">
               <li class="reviews__item reviews-slider__item">
-                <cite class="reviews__author">Николай Петров</cite>
+                <div class="reviews__author-wrapper">
+                  <cite class="reviews__author">Николай Петров</cite>
+                  <p class="reviews__author-age">25 лет, водитель трамвая</p>
+                </div>
                 <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
                 </blockquote>
               </li>
@@ -190,7 +212,7 @@
                 <p class="contacts__text">Пишите:</p>
                 <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--center">
                 <p class="contacts__text">Приезжайте в гости:</p>
                 <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
               </li>
@@ -201,6 +223,26 @@
           </div>
         </section>
       </main>
+      <footer class="page-footer page-footer--index">
+        <a class="page-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="140px" height="50px" alt="Логотип">
+        </a>
+        <ul class="socials page-footer__socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </li>
+        </ul>
+        <div class="page-footer__developers">
+          <span>Разработано</span>
+          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -1,13 +1,12 @@
 .page-header {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 110px auto;
 }
 
 .page-header__wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(40, 0, 0, 0.3);
 }
 
 .page-header__logo-image {
@@ -40,6 +39,7 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: 660px;
+    margin-bottom: 72px;
   }
 
   .page-header__logo-wrapper {
@@ -53,8 +53,6 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
-
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
   }
 
   .page-header__wrapper {
@@ -62,6 +60,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 120px;
+    background-color: rgba(40, 0, 0, 0.3);
   }
 
   .page-header__logo-wrapper {
