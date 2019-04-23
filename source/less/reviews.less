@@ -11,8 +11,8 @@
 
 .reviews__list {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   width: 320px;
   margin: 0 0 30px 0;
   padding: 0;
@@ -60,7 +60,7 @@
   margin-bottom: 50px;
 }
 
-@media(min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .reviews {
     display: flex;
     flex-direction: column;
@@ -74,8 +74,8 @@
   }
 
   .reviews__item {
-    width: 620px;
     flex-direction: column-reverse;
+    width: 620px;
   }
 
   .reviews__author {
@@ -84,14 +84,16 @@
 
   .reviews__author-age {
     display: block;
-    font-size: 14px;
+
     font-weight: 400;
+    font-size: 14px;
     line-height: 30px;
   }
 
   .reviews__text {
-    font-size: 18px;
     margin-bottom: 30px;
+
+    font-size: 18px;
   }
 }
 
@@ -115,5 +117,4 @@
   .reviews__author-age {
     font-size: 18px;
   }
-
 }
