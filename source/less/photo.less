@@ -1,6 +1,7 @@
 .photo {
-  background-color: #ffffff;
   width: 320px;
+
+  background-color: #ffffff;
 }
 
 .photo__list {
@@ -8,66 +9,72 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 0;
-  list-style: none;
   margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
 }
 
 .photo__item {
   position: relative;
-  width: 280px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 280px;
 }
 
 .photo__review {
   display: flex;
   flex-direction: row;
-  margin: 0 0 20px 0;
-  align-items: flex-start;
   flex-wrap: wrap;
-  background-color: #f2f2f2;
+  align-items: flex-start;
+  margin: 0 0 20px 0;
   padding: 10px 10px;
+
+  background-color: #f2f2f2;
 }
 
 .photo__author {
   display: flex;
+  margin-right: 10px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   color: #283645;
-  margin-right: 10px;
-
 }
 
 .photo__time {
   display: flex;
+  margin-top: 2px;
+
   font-weight: 300;
   font-size: 12px;
   color: #283645;
   text-transform: uppercase;
-  margin-top: 2px;
-
 }
 
 .photo__text {
   display: flex;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
 }
 
 .photo__like-button {
-  display: flex;
   position: relative;
+
+  display: flex;
+  margin-left: 20px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
-  margin-left: 20px;
+
   background: none;
   border: none;
 }
@@ -98,15 +105,15 @@
 
   .photo__item {
     width: 300px;
-    margin: 10px auto;
     min-height: 455px;
+    margin: 10px auto;
+
     background-color: green;
   }
 
   .photo__item--panorama {
     width: 620px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -125,6 +132,4 @@
   .photo__item {
     min-height: 555px;
   }
-
-
 }
