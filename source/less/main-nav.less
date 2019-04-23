@@ -1,15 +1,38 @@
 .main-nav {
   position: absolute;
   z-index: 10;
+  top: 70px;
+  left: 0px;
 
   display: flex;
   flex-direction: column;
   min-width: 320px;
 
   background-color: #283645;
+  display: none;
 }
 
 .main-nav__list {
   display: flex;
   flex-direction: column;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 660px;
+    top: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    position: static;
+    width: 650px;
+    background-color: transparent;
+  }
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
