@@ -21,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
+  margin-bottom: 20px;
 }
 
 .photo__review {
@@ -28,8 +29,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 0 0 20px 0;
-  padding: 10px 10px;
+  margin: 0;
+  padding: 26px 20px 26px 17px;
 
   background-color: #f2f2f2;
 }
@@ -37,6 +38,7 @@
 .photo__author {
   display: flex;
   margin-right: 10px;
+  margin-bottom: 3px;
 
   font-style: normal;
   font-weight: 700;
@@ -56,6 +58,7 @@
 
 .photo__text {
   display: flex;
+  margin: 0 0 15px 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -65,12 +68,14 @@
 .photo__like-button {
   position: relative;
 
-  display: flex;
+  width: 200px;
   margin-left: 20px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
+  text-align: left;
   color: #d22856;
   text-transform: uppercase;
 
@@ -104,14 +109,53 @@
 
   .photo__item {
     width: 300px;
-    min-height: 455px;
-    margin: 10px auto;
+    margin: 0 auto 20px auto;
 
     background-color: green;
   }
 
+  .photo__item img {
+    width: 300px;
+    height: 300px;
+  }
+
   .photo__item--panorama {
     width: 620px;
+  }
+
+  .photo__item--panorama img {
+    width: 660px;
+    height: 505px;
+  }
+
+  .photo__review {
+    min-height: 155px;
+    padding: 28px 36px 15px 28px;
+  }
+
+  .photo__like-button {
+    margin-left: 0;
+  }
+
+  .photo__like-button::before {
+    left: 200px;
+  }
+
+  .photo__item--panorama .photo__like-button::before {
+    left: 110px;
+  }
+
+  .photo__item--panorama .photo__like-button {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  .photo__item--panorama .photo__text {
+    order: 2;
+  }
+
+  .photo__item--panorama .photo__review {
+    min-height: 120px;
   }
 }
 
@@ -124,11 +168,20 @@
     width: 940px;
   }
 
+  .photo__item--panorama img {
+    width: 1200px;
+    height: 505px;
+  }
+
+  .photo__item--panorama .photo__review {
+    min-height: 100px;
+  }
+
   .photo__list {
     width: 960px;
   }
 
-  .photo__item {
-    min-height: 555px;
+  .photo__item img {
+    height: 400px;
   }
 }
