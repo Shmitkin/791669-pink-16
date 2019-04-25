@@ -1,6 +1,9 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto 110px auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0 auto;
+  //  align-items: center;
 }
 
 .page-header__wrapper {
@@ -19,8 +22,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  width: 100%;
+  //width: 320px;
   height: 70px;
+  margin-right: auto;
   padding: 0 30px;
 
   background-color: #283645;
@@ -41,7 +46,6 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: 660px;
-    margin-bottom: 72px;
   }
 
   .page-header__logo-wrapper {
@@ -55,6 +59,9 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    position: absolute;
+    z-index: 10;
+
     width: 1200px;
   }
 

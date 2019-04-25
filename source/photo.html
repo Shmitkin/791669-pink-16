@@ -9,30 +9,34 @@
       <div class="page-wrapper">
       <header class="page-header">
         <div class="page-header__wrapper">
+          <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
             </a>
             <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
           <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Фотографии</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link site-list__link--active">Фотографии</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">html academy</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML Academy</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
       <main class="page-photo">
-        <h1 class="page-photo__title">Фотографии пользователей</h1>
+        <div class="page-photo__title-wrapper">
+          <h1 class="page-photo__title">Фотографии пользователей</h1>
+        </div>
         <div class="page-photo__description-wrapper">
           <p class="page-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
@@ -118,12 +122,15 @@
           </ul>
         </div>
         <form class="post-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-          <p class="post-form__title">Затмите их всех!</p>
-          <p class="post-form__title">Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="post-form__titles-container">
+            <p class="post-form__title">Затмите их всех!</p>
+            <p class="post-form__title">Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
           <div class="post-form__wrapper">
-              <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
-              <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
-              <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
+            <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+            <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
+            <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
+            <div class="post-form__buttons-container">
               <fieldset class="post-form__fieldset">
                 <div class="post-form__button-wrapper">
                   <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
@@ -134,6 +141,7 @@
               </fieldset>
               <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
               <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </main>
