@@ -1,0 +1,79 @@
+.form-review {
+  order: 5;
+  //  padding: 0 20px;
+}
+
+.form-review__legend {
+  display: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form-review__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-review__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form-review__text {
+  width: 100%;
+  min-height: 198px;
+  margin: 0;
+  padding: 0;
+
+  border: 2px solid #e5e5e5;
+
+  resize: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .form-review {
+    order: 5;
+    width: 620px;
+
+    background: none;
+  }
+
+  .form-review__fieldset {
+    padding: 40px 60px 50px 60px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-review__legend {
+    display: initial;
+    width: 262px;
+  }
+
+  .form-review__label {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-review {
+    width: 940px;
+
+    background: none;
+  }
+}
