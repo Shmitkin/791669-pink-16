@@ -130,7 +130,7 @@
             <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
             <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
             <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
-            <div class="post-form__buttons-container">
+            <div class="post-form__container">
               <fieldset class="post-form__fieldset">
                 <div class="post-form__button-wrapper">
                   <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
@@ -150,8 +150,10 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
-              <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+              <div class="post-form__buttons-container">
+                <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
+                <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+              </div>
             </div>
           </div>
         </form>

@@ -183,10 +183,24 @@
 @media (min-width: @desktop-width) {
   .photo {
     width: 1200px;
+    margin-bottom: -15px;
+  }
+
+  .photo__item img {
+    height: 400px;
+  }
+
+  .photo__item {
+    margin-bottom: 54px;
   }
 
   .photo__item--panorama {
     width: 940px;
+    margin-bottom: 47px;
+
+    & .photo__text {
+      min-height: initial;
+    }
   }
 
   .photo__item--panorama img {
@@ -200,9 +214,5 @@
 
   .photo__list {
     width: 960px;
-  }
-
-  .photo__item img {
-    height: 400px;
   }
 }
