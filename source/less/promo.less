@@ -1,8 +1,9 @@
 .promo {
+  padding-top: 108px;
+
   background: url("../img/bg-back-mobile@1x.jpg");
   background-color: #1d2631;
-    padding-top: 108px;
-    background-position-y: -67px;
+  background-position-y: -67px;
 }
 
 .promo__title {
@@ -37,10 +38,10 @@
 
   font-weight: 700;
   font-size: 18px;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-  line-height: 30px;
 
   border: 3px solid white;
   border-radius: 30px;
@@ -48,24 +49,24 @@
 
 .promo__description {
   margin: 0;
+  margin-bottom: 15px;
 
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 15px;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
     width: 660px;
-
-    background: url(../img/bg-back-tablet@1x.jpg);
-    background-position-y: -110px;
-    background-position-x: 50%;
-    padding-top: 72px;
     margin-bottom: 10px;
+    padding-top: 72px;
+
+    background: url("../img/bg-back-tablet@1x.jpg");
+    background-position-x: 50%;
+    background-position-y: -110px;
   }
 
   .promo__container {
@@ -80,7 +81,7 @@
   .promo__wrapper {
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: 0;
 
     width: 300px;
     padding: 0;
@@ -91,9 +92,9 @@
   .promo__title {
     display: block;
     margin: 0;
-    line-height: 48px;
     margin-bottom: 31px;
 
+    line-height: 48px;
   }
 
   .promo__image {
@@ -130,16 +131,18 @@
   }
 
   .promo__title {
-    font-size: 50px;
-    line-height: 60px;
     width: 300px;
     margin-bottom: 52px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .promo__download-button {
-    font-size: 21px;
-    padding: 10px 20px;
     margin-bottom: 67px;
+    padding: 10px 20px;
+
+    font-size: 21px;
   }
 
   .promo__image {

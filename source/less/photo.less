@@ -1,8 +1,8 @@
 .photo {
   width: 320px;
+  margin-bottom: 20px;
 
   background-color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .photo__list {
@@ -30,9 +30,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  min-height: 121px;
   margin: 0;
   padding: 20px 10px 20px 17px;
-  min-height: 121px;
 
   background-color: #f2f2f2;
 }
@@ -144,9 +144,9 @@
   }
 
   .photo__review {
+    align-content: flex-start;
     min-height: 155px;
     padding: 26px 20px 15px 28px;
-    align-content: flex-start;
   }
 
   .photo__like-button {
@@ -155,24 +155,25 @@
   }
 
   .photo__like-button::before {
-    left: 227px;
     top: 5px;
+    left: 227px;
   }
 
   .photo__item--panorama .photo__like-button::before {
-    left: 178px;
     top: 4px;
+    left: 178px;
   }
 
   .photo__item--panorama .photo__like-button {
-    text-align: right;
     margin-left: auto;
     padding-right: 36px;
+
+    text-align: right;
   }
 
   .photo__item--panorama .photo__text {
     order: 2;
-    margin: 0px 0 0 0;
+    margin: 0 0 0 0;
   }
 
   .photo__item--panorama .photo__review {

@@ -34,7 +34,7 @@
 }
 
 .post-form__fieldset {
-  margin: 0px 0 38px 0;
+  margin: 0 0 38px 0;
   padding: 0;
 
   text-align: center;
@@ -95,40 +95,42 @@
 }
 
 .post-form__adjustment-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: none;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .post-form__adjustment-item {
   display: flex;
-  height: 56px;
-  align-items: center;
   justify-content: flex-end;
-  border-bottom: 1px solid #dddfe0;
+  align-items: center;
   width: 275px;
+  height: 56px;
   margin-bottom: 16px;
-  padding-top: 16px;
   margin-left: auto;
+  padding-top: 16px;
   padding-right: 18px;
 
+  border-bottom: 1px solid #dddfe0;
 }
 
 @media (min-width: @tablet-width) {
-
   .post-form {
     margin-bottom: 15px;
   }
+
   .post-form__titles-container {
-    padding: 20px 40px;
     margin-bottom: 48px;
+    padding: 20px 40px;
   }
 
   .post-form__fieldset {
-    border: none;
     margin-bottom: 49px;
+
+    border: none;
   }
 
   .post-form__title {
@@ -170,10 +172,10 @@
   }
 
   .post-form__button {
-    margin-bottom: 24px;
-    margin-right: 13px;
-    margin-left: auto;
     width: 260px;
+    margin-right: 13px;
+    margin-bottom: 24px;
+    margin-left: auto;
   }
 }
 
@@ -181,6 +183,7 @@
   .post-form__wrapper {
     justify-content: space-around;
     width: 940px;
+    padding: 58px 20px 56px 36px;
   }
 
   .post-form {
@@ -190,17 +193,13 @@
   .post-form__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 410px;
-    justify-content: space-between;
   }
 
   .post-form__titles-container {
     margin-bottom: 46px;
-  }
-
-  .post-form__wrapper {
-    padding: 58px 20px 56px 36px;
   }
 
   .post-form__buttons-container {
@@ -211,8 +210,8 @@
   }
 
   .post-form__button {
-    margin: 0;
     width: 183px;
+    margin: 0;
   }
 
   .post-form__adjustment-item {
