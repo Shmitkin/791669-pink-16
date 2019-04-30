@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 98px;
+  margin-bottom: 42px;
 
   background-color: #ffffff;
 }
@@ -8,15 +8,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  width: 100%
 }
 
 .reviews__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
-  margin: 0 0 15px 0;
+  margin: 0 0 33px 0;
   padding: 0;
 
   list-style: none;
@@ -48,6 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .reviews__text {
@@ -63,17 +63,17 @@
   margin-bottom: 0;
 }
 
+.reviews__arrow {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 660px;
-    margin: 0 0 17px 0;
-  }
-
-  .reviews__list {
-    width: 660px;
+    margin: 0 0 22px 0;
   }
 
   .reviews__item {
@@ -83,7 +83,7 @@
   }
 
   .reviews__author {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 
     font-size: 20px;
   }
@@ -98,7 +98,7 @@
   }
 
   .reviews__text {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 
     font-size: 18px;
   }
@@ -107,18 +107,42 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: 1200px;
+    padding: 0 120px;
+    margin: 0 0 8px 0;
   }
 
   .reviews__quotes {
     width: 80px;
-    height: 65px;
-    margin-bottom: 50px;
+    height: 66px;
+    margin-bottom: 44px;
+    margin-left: 7px;
 
-    background-color: red;
+    background: url("../img/icon-quotes.svg") no-repeat;
   }
 
-  .reviews__list {
-    width: 960px;
+  .reviews__arrow {
+    display: block;
+    width: 22px;
+    height: 42px;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    border: none;
+    margin-top: 27px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url("../img/icon-review-arrow-left.svg");
+
+    &:last-child {
+      transform: rotate(180deg);
+    }
+  }
+
+  .reviews__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .reviews__item {
@@ -131,5 +155,9 @@
 
   .reviews__author-age {
     font-size: 18px;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

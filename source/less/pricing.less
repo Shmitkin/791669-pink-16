@@ -2,6 +2,8 @@
   margin-bottom: 42px;
   padding-bottom: 10px;
   overflow: hidden;
+  padding-top: 61px;
+  padding-bottom: 47px;
 
   border-collapse: collapse;
 
@@ -15,7 +17,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  min-height: 400px;
+  min-height: 363px;
 }
 
 .pricing-table {
@@ -39,6 +41,9 @@
   width: 278px;
   height: 98px;
   padding-top: 16px;
+  justify-content: space-between;
+  padding: 16px 0 20px 0;
+  margin: 0;
 
   background-color: #283645;
   border-right: 2px solid #ffffff;
@@ -52,6 +57,7 @@
 
 .pricing-table__text {
   margin: 0;
+  padding: 0;
 }
 
 .pricing-table__data {
@@ -83,11 +89,11 @@
 
 .pricing__toggles {
   margin: 0;
-  margin-bottom: 32px;
 }
 
 .pricing-table__header-cost {
   margin: 0;
+  padding: 0;
 
   font-weight: 300;
   font-size: 24px;
@@ -114,30 +120,38 @@
   .pricing {
     width: 660px;
     margin-bottom: 47px;
+    padding-top: 85px;
+    padding-bottom: 68px;
+  }
+
+  .pricing__toggles {
+    display: none;
   }
 
   .pricing__wrapper {
     min-height: initial;
-    padding-top: 88px;
   }
 
   .pricing-table {
     position: static;
 
     width: 620px;
-    margin-bottom: 57px;
   }
 
   .pricing-table__title {
     font-size: 16px;
+    line-height: 20px;
   }
 
   .pricing-table__header-cost {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .pricing-table__text--main {
     width: 120px;
+    padding: 0;
+    margin: 0;
 
     text-align: left;
     text-transform: none;
@@ -157,12 +171,11 @@
   }
 
   .pricing-table__header-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 155px;
     height: 80px;
     padding: 0;
+    padding-top: 18px;
+    padding-bottom: 13px;
   }
 
   .pricing-table__header-data--empty {
@@ -177,6 +190,9 @@
 @media (min-width: @desktop-width) {
   .pricing {
     width: 1200px;
+    padding-top: 148px;
+    padding-bottom: 96px;
+    margin-bottom: 65px;
   }
 
   .pricing-table__data {
@@ -187,11 +203,12 @@
   .pricing-table__header-data {
     width: 235px;
     height: 100px;
+    padding-top: 21px;
+    padding-bottom: 25px;
   }
 
   .pricing-table {
     width: 940px;
-    margin-bottom: 87px;
   }
 
   .pricing-table__title {

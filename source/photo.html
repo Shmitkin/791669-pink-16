@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк - фотогалерея</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
       <div class="page-wrapper">
@@ -11,7 +12,11 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+              </picture>
             </a>
             <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -175,7 +180,9 @@
         </ul>
         <div class="page-footer__developers">
           <span>Разработано</span>
-          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="img/logo-htmlacademy.svg" width="27px" height="45px" alt="Логотип">
+          </a>
         </div>
       </footer>
     </div>
