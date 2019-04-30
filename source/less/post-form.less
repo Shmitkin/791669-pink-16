@@ -72,6 +72,7 @@
 
 .post-form__adjustment {
   position: relative;
+
   width: 245px;
   height: 2px;
   margin-bottom: 34px;
@@ -80,27 +81,29 @@
 
   &::before {
     content: "";
-    width: 26px;
-    height: 26px;
     position: absolute;
     top: -9px;
     left: -53px;
+
+    width: 26px;
+    height: 26px;
   }
 }
 
 .post-form__adjustment--crop::before {
-  background: url(../img/icon-editor-crop.svg);
+  background: url("../img/icon-editor-crop.svg");
   background-size: cover;
 }
 
 .post-form__adjustment--fill::before {
-  background: url(../img/icon-editor-fill.svg);
+  background: url("../img/icon-editor-fill.svg");
   background-size: cover;
 }
+
 .post-form__adjustment--contrast::before {
-  background: url(../img/icon-editor-contrast.svg) no-repeat;
-  background-size: 70% 70%;
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
   background-position: 50% 50%;
+  background-size: 70% 70%;
 }
 
 .post-form__button {
@@ -120,8 +123,9 @@
 }
 
 .post-form__button--disabled {
-  border-color: #dddfe0;
   color: #dddfe0;
+
+  border-color: #dddfe0;
 }
 
 .post-form__adjustment-list {
@@ -251,11 +255,13 @@
 
   .post-form__adjustment {
     width: 288px;
-        &::before {
-      width: 46px;
-      height: 48px;
+
+    &::before {
       top: -23px;
       left: -95px;
+
+      width: 46px;
+      height: 48px;
     }
   }
 }

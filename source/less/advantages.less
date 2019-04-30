@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 42px;
-  padding: 40px 20px 0px 20px;
+  padding: 40px 20px 0 20px;
   overflow: hidden;
 
   background-color: #f2f2f2;
@@ -41,8 +41,8 @@
 }
 
 .advantages__image-list {
-    margin: 0;
-  }
+  margin: 0;
+}
 
 .advantages__text-item {
   display: flex;
@@ -58,10 +58,11 @@
 
 .advantages__image-wrapper {
   height: 277px;
-  overflow: hidden;
   margin: 0;
   padding: 0;
-  line-height: 0px;
+  overflow: hidden;
+
+  line-height: 0;
 }
 
 .advantages__image {
@@ -94,9 +95,10 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
-    background: none;
-    padding: 0;
     margin-bottom: 61px;
+    padding: 0;
+
+    background: none;
   }
 
   .advantages__main-title {
@@ -114,31 +116,31 @@
   .advantages__wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 20px;
     width: 100%;
+    padding: 0 20px;
 
     background-color: #f2f2f2;
   }
 
-.advantages__image-wrapper {
-  height: 481px;
-}
+  .advantages__image-wrapper {
+    height: 481px;
+  }
 
-.advantages__image {
-  height: 100%;
-  width: auto;
-}
+  .advantages__image {
+    width: auto;
+    height: 100%;
+  }
 
   .advantages__text-list {
     align-items: flex-start;
-    padding: 0;
     margin: 28px 0 0 0;
+    padding: 0;
   }
 
   .advantages__text-item {
     align-items: flex-start;
-    padding: 0;
     margin-bottom: 35px;
+    padding: 0;
   }
 
   .advantages__image-list {
@@ -151,9 +153,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .advantages {
-  }
-
   .advantages__wrapper {
     flex-direction: column-reverse;
     width: 1200px;
@@ -174,9 +173,10 @@
   .advantages__text-item,
   .advantages__image-item {
     align-items: center;
-    margin: 0;
-    text-align: center;
     width: 320px;
+    margin: 0;
+
+    text-align: center;
   }
 
   .advantages__image-item {
@@ -195,8 +195,8 @@
   .advantages__image-list {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 
   .advantages__image-list {
@@ -214,10 +214,11 @@
   }
 
   .advantages__title {
+    margin-bottom: 25px;
+
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    margin-bottom: 25px;
   }
 }

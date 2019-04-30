@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 
 .reviews__list {
@@ -107,8 +107,8 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: 1200px;
-    padding: 0 120px;
     margin: 0 0 8px 0;
+    padding: 0 120px;
   }
 
   .reviews__quotes {
@@ -124,14 +124,16 @@
     display: block;
     width: 22px;
     height: 42px;
+    margin-top: 27px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 0;
+
     font-size: 0;
     color: transparent;
-    border: none;
-    margin-top: 27px;
-    margin-left: 10px;
-    margin-right: 10px;
+
     background: url("../img/icon-review-arrow-left.svg");
+    border: none;
 
     &:last-child {
       transform: rotate(180deg);
@@ -140,9 +142,9 @@
 
   .reviews__container {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
   }
 
   .reviews__item {
