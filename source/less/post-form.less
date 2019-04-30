@@ -71,11 +71,36 @@
 }
 
 .post-form__adjustment {
+  position: relative;
   width: 245px;
   height: 2px;
   margin-bottom: 34px;
 
   background-color: #d22856;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -9px;
+    left: -53px;
+  }
+}
+
+.post-form__adjustment--crop::before {
+  background: url(../img/icon-editor-crop.svg);
+  background-size: cover;
+}
+
+.post-form__adjustment--fill::before {
+  background: url(../img/icon-editor-fill.svg);
+  background-size: cover;
+}
+.post-form__adjustment--contrast::before {
+  background: url(../img/icon-editor-contrast.svg) no-repeat;
+  background-size: 70% 70%;
+  background-position: 50% 50%;
 }
 
 .post-form__button {
@@ -92,6 +117,11 @@
   background-color: #f2f2f2;
   border: 3px solid #d22856;
   border-radius: 30px;
+}
+
+.post-form__button--disabled {
+  border-color: #dddfe0;
+  color: #dddfe0;
 }
 
 .post-form__adjustment-list {
@@ -221,5 +251,11 @@
 
   .post-form__adjustment {
     width: 288px;
+        &::before {
+      width: 46px;
+      height: 48px;
+      top: -23px;
+      left: -95px;
+    }
   }
 }
