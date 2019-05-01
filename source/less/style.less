@@ -9,6 +9,12 @@ html {
   box-sizing: border-box;
 }
 
+picture {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
 /*Подключаем нестандартные шрифты*/
 
 @font-face {
@@ -59,6 +65,7 @@ body {
 }
 
 @import "constants.less";
+@import "slider-toggles";
 @import "page-header.less";
 @import "main-nav.less";
 @import "page-main.less";
@@ -76,7 +83,6 @@ body {
 @import "page-form.less";
 @import "contest-form.less";
 @import "page-wrapper.less";
-@import "helper.less";
 @import "effect.less";
 @import "form-name.less";
 @import "form-achievements.less";

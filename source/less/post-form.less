@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 36px;
 }
 
 .post-form__wrapper {
@@ -10,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   width: 320px;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 22px 32px 19px;
 
   background-color: #f2f2f2;
 }
@@ -24,12 +25,16 @@
   text-align: center;
 }
 
-.post-form__buttons-container {
-  padding: 0 20px;
+.post-form__titles-container {
+  margin-bottom: 41px;
+}
+
+.post-form__container {
+  padding-top: 40px;
 }
 
 .post-form__fieldset {
-  margin: 30px 0 40px 0;
+  margin: 0 0 38px 0;
   padding: 0;
 
   text-align: center;
@@ -40,7 +45,7 @@
 
 .post-form__button-wrapper {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 
   text-align: center;
 }
@@ -48,7 +53,7 @@
 .post-form__button-adjustment {
   width: 50px;
   height: 50px;
-  margin: 0 15px 0 15px;
+  margin: 0 13px 0 13px;
 
   border: none;
 }
@@ -66,11 +71,39 @@
 }
 
 .post-form__adjustment {
+  position: relative;
+
   width: 245px;
   height: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 
   background-color: #d22856;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -53px;
+
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.post-form__adjustment--crop::before {
+  background: url("../img/icon-editor-crop.svg");
+  background-size: cover;
+}
+
+.post-form__adjustment--fill::before {
+  background: url("../img/icon-editor-fill.svg");
+  background-size: cover;
+}
+
+.post-form__adjustment--contrast::before {
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
+  background-position: 50% 50%;
+  background-size: 70% 70%;
 }
 
 .post-form__button {
@@ -89,9 +122,49 @@
   border-radius: 30px;
 }
 
+.post-form__button--disabled {
+  color: #dddfe0;
+
+  border-color: #dddfe0;
+}
+
+.post-form__adjustment-list {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.post-form__adjustment-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 275px;
+  height: 56px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  padding-top: 16px;
+  padding-right: 18px;
+
+  border-bottom: 1px solid #dddfe0;
+}
+
 @media (min-width: @tablet-width) {
+  .post-form {
+    margin-bottom: 15px;
+  }
+
   .post-form__titles-container {
-    padding: 50px 40px 70px 40px;
+    margin-bottom: 48px;
+    padding: 20px 40px;
+  }
+
+  .post-form__fieldset {
+    margin-bottom: 49px;
+
+    border: none;
   }
 
   .post-form__title {
@@ -102,10 +175,41 @@
     flex-direction: row;
     justify-content: space-between;
     width: 660px;
+    padding: 58px 20px 54px 20px;
+
+    & img {
+      width: 300px;
+      height: 400px;
+    }
   }
 
-  .post-form__buttons-container {
+  .post-form__container {
     width: 300px;
+    height: 400px;
+    padding: 0;
+  }
+
+  .post-form__button-wrapper {
+    display: none;
+  }
+
+  .post-form__adjustment--optional {
+    display: none;
+  }
+
+  .post-form__adjustment {
+    width: 200px;
+  }
+
+  .post-form__adjustment-list {
+    display: flex;
+  }
+
+  .post-form__button {
+    width: 260px;
+    margin-right: 13px;
+    margin-bottom: 24px;
+    margin-left: auto;
   }
 }
 
@@ -113,12 +217,51 @@
   .post-form__wrapper {
     justify-content: space-around;
     width: 940px;
+    padding: 58px 20px 56px 36px;
+  }
+
+  .post-form {
+    margin-bottom: 65px;
+  }
+
+  .post-form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+  }
+
+  .post-form__titles-container {
+    margin-bottom: 46px;
   }
 
   .post-form__buttons-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     width: 410px;
+    padding-left: 3px;
+  }
+
+  .post-form__button {
+    width: 183px;
+    margin: 0;
+  }
+
+  .post-form__adjustment-item {
+    width: 410px;
+    padding-right: 23px;
+  }
+
+  .post-form__adjustment {
+    width: 288px;
+
+    &::before {
+      top: -23px;
+      left: -95px;
+
+      width: 46px;
+      height: 48px;
+    }
   }
 }

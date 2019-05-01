@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк - фотогалерея</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
       <div class="page-wrapper">
@@ -11,7 +12,11 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+              </picture>
             </a>
             <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -43,7 +48,11 @@
         <div class="photo">
           <ul class="photo__list">
             <li class="photo__item photo__item--panorama">
-              <img class="photo__item-panorama" src="img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Панорамная фоторгафия висячего моста и гусотго леса под ним">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/panorama-desktop@1x.jpg" srcset="img/panorama-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/panorama-tablet@1x.jpg" srcset="img/panorama-tablet@2x.jpg">
+                <img class="photo__item-panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320px" height="137px" alt="Панорамная фоторгафия висячего моста и гусотго леса под ним">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Анна</cite>
                 <time datetime="2019" class="photo__time">(5 минут назад)</time>
@@ -54,7 +63,11 @@
               </blockquote>
             </li>
             <li class="photo__item">
-              <img src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Белая машина на фоне серой стены">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-car-desktop@1x.jpg" srcset="img/photo-car-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/photo-car-tablet@1x.jpg" srcset="img/photo-car-tablet@2x.jpg">
+                <img src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Белая машина на фоне серой стены">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Левон</cite>
                 <time datetime="2019" class="photo__time">(5 часов назад)</time>
@@ -65,7 +78,11 @@
               </blockquote>
             </li>
             <li class="photo__item">
-              <img src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Барабанная установка">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-drumset-desktop@1x.jpg" srcset="img/photo-drumset-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/photo-drumset-tablet@1x.jpg" srcset="img/photo-drumset-tablet@2x.jpg">
+                <img src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Барабанная установка">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Антон</cite>
                 <time datetime="2019" class="photo__time">(12 часов назад)</time>
@@ -76,7 +93,11 @@
               </blockquote>
             </li>
             <li class="photo__item">
-              <img src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Прозрачная крыша и вид на голубое небо с небольшими облаками">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-window-desktop@1x.jpg" srcset="img/photo-window-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/photo-window-tablet@1x.jpg" srcset="img/photo-window-tablet@2x.jpg">
+                <img src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Прозрачная крыша и вид на голубое небо с небольшими облаками">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Борис</cite>
                 <time datetime="2019" class="photo__time">(20 часов назад)</time>
@@ -87,7 +108,11 @@
               </blockquote>
             </li>
             <li class="photo__item">
-              <img src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Оранжевый тент с бахчевым развалом под ним в поле">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-fair-desktop@1x.jpg" srcset="img/photo-fair-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/photo-fair-tablet@1x.jpg" srcset="img/photo-fair-tablet@2x.jpg">
+                <img src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Оранжевый тент с бахчевым развалом под ним в поле">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Сергей</cite>
                 <time datetime="2019" class="photo__time">(25 часов назад)</time>
@@ -98,7 +123,11 @@
               </blockquote>
             </li>
             <li class="photo__item">
-              <img src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Две ноги на фоне обрыва с густой растительностью">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-pov-desktop@1x.jpg" srcset="img/photo-pov-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/photo-pov-tablet@1x.jpg" srcset="img/photo-pov-tablet@2x.jpg">
+                <img src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Две ноги на фоне обрыва с густой растительностью">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Максим</cite>
                 <time datetime="2019" class="photo__time">(40 часов назад)</time>
@@ -109,7 +138,11 @@
               </blockquote>
             </li>
             <li class="photo__item">
-              <img src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Крыло самолета в небе и закатное солнце">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-wing-desktop@1x.jpg" srcset="img/photo-wing-desktop@2x.jpg">
+                <source media="(min-width: 660px)" src="img/photo-wing-tablet@1x.jpg" srcset="img/photo-wing-tablet@2x.jpg">
+                <img src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Крыло самолета в небе и закатное солнце">
+              </picture>
               <blockquote class="photo__review">
                 <cite class="photo__author">Надежда</cite>
                 <time datetime="2019" class="photo__time">(45 часов назад)</time>
@@ -127,27 +160,44 @@
             <p class="post-form__title">Выкладывайте все, что накопилось в телефоне!</p>
           </div>
           <div class="post-form__wrapper">
-            <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+            <picture>
+              <source media="(min-width: 1200px)" src="img/photo-road-desktop@1x.jpg" srcset="img/photo-road-desktop@2x.jpg">
+              <source media="(min-width: 660px)" src="img/photo-road-tablet@1x.jpg" srcset="img/photo-road-tablet@2x.jpg">
+              <img src="img/photo-road-mobile@1x.jpg" width="280px" height="374px">
+            </picture>
             <input class="post-form__upload visually-hidden" type="file" id="user-photo" name="user-photo">
             <label class="post-form__drop-zone visually-hidden" for="user-photo">Загрузите или перетащите сюда фото</label>
-            <div class="post-form__buttons-container">
+            <div class="post-form__container">
               <fieldset class="post-form__fieldset">
                 <div class="post-form__button-wrapper">
                   <button class="post-form__button-crop post-form__button-adjustment" type="button"><span class="visually-hidden">Заливка</span></button>
                   <button class="post-form__button-fill post-form__button-adjustment" type="button"><span class="visually-hidden">Обрезка</span></button>
                   <button class="post-form__button-contrast post-form__button-adjustment" type="button"><span class="visually-hidden">Яркость</span></button>
                 </div>
-                <input class="post-form__adjustment" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
+                <input class="post-form__adjustment post-form__adjustment--optional" type="range" name="intensity" id="intensity" min="1" max="100" step="1">
+                <ul class="post-form__adjustment-list">
+                  <li class="post-form__adjustment-item">
+                    <input class="post-form__adjustment post-form__adjustment--crop" type="range" name="intensity-crop" id="intensity-crop" min="1" max="100" step="1">
+                  </li>
+                  <li class="post-form__adjustment-item">
+                    <input class="post-form__adjustment post-form__adjustment--fill" type="range" name="intensity-fill" id="intensity-fill" min="1" max="100" step="1">
+                  </li>
+                  <li class="post-form__adjustment-item">
+                    <input class="post-form__adjustment post-form__adjustment--contrast" type="range" name="intensity-contrast" id="intensity-contrast" min="1" max="100" step="1">
+                  </li>
+                </ul>
               </fieldset>
-              <button class="post-form__button post-form__button--disabled" type="submit">Запостить</button>
-              <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+              <div class="post-form__buttons-container">
+                <button class="post-form__button" type="submit">Запостить</button>
+                <button class="post-form__button post-form__button--disabled" type="reset">Отмена</button>
+              </div>
             </div>
           </div>
         </form>
       </main>
       <footer class="page-footer">
         <a class="page-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="140px" height="50px" alt="Логотип">
+          <img src="img/logo-pink-blue-mobile.svg" width="145px" height="50px" alt="Логотип">
         </a>
         <ul class="socials page-footer__socials">
           <li class="socials__item">
@@ -162,7 +212,9 @@
         </ul>
         <div class="page-footer__developers">
           <span>Разработано</span>
-          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="img/logo-htmlacademy.svg" width="27px" height="45px" alt="Логотип">
+          </a>
         </div>
       </footer>
     </div>

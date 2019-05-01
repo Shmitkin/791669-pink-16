@@ -1,6 +1,7 @@
 .form-review {
   order: 5;
   //  padding: 0 20px;
+  margin-bottom: 44px;
 }
 
 .form-review__legend {
@@ -26,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
+  margin-bottom: 10px;
 
   font-weight: 400;
   font-size: 14px;
@@ -36,13 +38,23 @@
 
 .form-review__text {
   width: 100%;
-  min-height: 198px;
+  min-height: 201px;
   margin: 0;
-  padding: 0;
+  padding: 14px 18px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  color: #283645;
 
   border: 2px solid #e5e5e5;
 
   resize: none;
+
+  &::placeholder {
+    color: #283645;
+  }
 }
 
 
@@ -50,12 +62,13 @@
   .form-review {
     order: 5;
     width: 620px;
+    margin-bottom: 67px;
 
     background: none;
   }
 
   .form-review__fieldset {
-    padding: 40px 60px 50px 60px;
+    padding: 37px 58px 47px 58px;
 
     border: 2px solid #e5e5e5;
   }
@@ -68,12 +81,23 @@
   .form-review__label {
     display: none;
   }
+
+  .form-review__text {
+    min-height: 193px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-review {
     width: 940px;
+    margin-bottom: 65px;
+  }
 
-    background: none;
+  .form-review__fieldset {
+    padding: 34px 58px 39px 58px;
+  }
+
+  .form-review__text {
+    min-height: 128px;
   }
 }

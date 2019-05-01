@@ -4,6 +4,7 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 .page-footer--index {
@@ -12,13 +13,13 @@
 
 .page-footer__logo {
   display: flex;
+  margin-bottom: 36px;
 }
 
 .page-footer__developers {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
 
   font-weight: 400;
   font-size: 14px;
@@ -26,12 +27,11 @@
 }
 
 .page-footer__developers-logo {
-  display: block;
-  width: 30px;
-  height: 50px;
-  margin-top: 4px;
+  margin-top: 9px;
+}
 
-  background: url("../img/logo-htmlacademy.svg") no-repeat 50% 50%;
+.page-footer__developers span {
+  margin-right: 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -39,16 +39,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 660px;
-    padding: 30px 20px;
-  }
-
-  .page-footer__logo {
+    width: 100%;
+    height: 100px;
     margin-bottom: 10px;
+    padding: 10px 20px;
   }
 
   .page-footer--index {
     display: flex;
+  }
+
+  .page-footer__logo {
+    margin: -18px 0 0 0;
+
+    & img {
+      width: 100%;
+      height: 40px;
+    }
   }
 }
 
@@ -57,11 +64,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 1200px;
-    padding: 40px 30px;
+    margin-bottom: 35px;
   }
 
-  .page-footer__logo {
-    margin-bottom: 10px;
+  .page-footer__developers span {
+    font-size: 18px;
   }
 }

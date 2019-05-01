@@ -34,22 +34,14 @@
   text-decoration: none;
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav {
-    width: 660px;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 620px;
-
     background-color: transparent;
   }
 
   .main-nav__list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   .main-nav__link {
@@ -60,6 +52,8 @@
   }
 
   .main-nav__item {
+    margin-left: 60px;
+
     border: none;
   }
 }

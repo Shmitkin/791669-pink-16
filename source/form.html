@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк - фотогалерея</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <div class="page-wrapper">
@@ -11,7 +12,11 @@
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
+              </picture>
             </a>
             <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -21,10 +26,10 @@
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link site-list__link--active">Фотографии</a>
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
+                <a class="main-nav__link site-list__link--active">Конкурс</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">HTML Academy</a>
@@ -45,13 +50,13 @@
             <fieldset class="form-name__fieldset">
             <legend class="form-name__legend visually-hidden">Ваше полное имя</legend>
               <div class="form-name__container">
-                <label class="form-name__label" for="last-name">Фамилия:
+                <label class="form-name__label" for="last-name"><span>Фамилия:</span>
                   <input class="form-name__input" id="last-name" name="last-name" type="text" placeholder="Укажите фамилию" required>
                 </label>
-                <label class="form-name__label" for="first-name">Имя:
+                <label class="form-name__label" for="first-name"><span>Имя:</span>
                   <input class="form-name__input" id="first-name" name="first-name" type="text" placeholder="Введите ваше имя" required>
                 </label>
-                <label class="form-name__label" for="middle-name">Отчество:
+                <label class="form-name__label" for="middle-name"><span>Отчество:</span>
                   <input class="form-name__input" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
                 </label>
               </div>
@@ -86,10 +91,10 @@
             <fieldset class="form-contacts__fieldset">
               <legend class="form-contacts__legend"> Контактная информация</legend>
               <div class="form-contacts__container">
-                <label class="form-contacts__label" for="tel">Номер телефона
+                <label class="form-contacts__label" for="tel"><span>Номер телефона</span>
                   <input class="form-contacts__input" id="tel" name="tel" type="tel" placeholder="Номер, пожалуйста">
                 </label>
-                <label class="form-contacts__label" for="email">Адрес почты
+                <label class="form-contacts__label" for="email"><span>Адрес почты</span>
                   <input class="form-contacts__input" id="email" name="email" type="email" placeholder="Введите почту" required>
                 </label>
               </div>
@@ -99,11 +104,11 @@
             <fieldset class="form-platform__fieldset">
               <legend class="form-platform__legend">С каким приложением путешествовали?</legend>
               <div class="form-platform__container">
-                <input class="form-platform__checkbox" type="checkbox" name="platform" value="ios" id="ios">
+                <input class="form-platform__radio" type="radio" name="platform" value="ios" id="ios">
                 <label class="form-platform__label" for="ios">Pink для iOS</label>
-                <input class="form-platform__checkbox" type="checkbox" name="platform" value="android" id="android">
-                <label class="form-platform__label" for="android">Pink для Android</label>
-                <input class="form-platform__checkbox" type="checkbox" name="platform" value="windows-phone" id="windows-phone">
+                <input class="form-platform__radio" type="radio" name="platform" value="android" id="android">
+                <label class="form-platform__label" for="android">Pink на Android</label>
+                <input class="form-platform__radio" type="radio" name="platform" value="windows-phone" id="windows-phone">
                 <label class="form-platform__label" for="windows-phone">Windows Phone</label>
               </div>
             </fieldset>
@@ -112,7 +117,7 @@
             <fieldset class="form-review__fieldset">
               <legend class="form-review__legend" for="review">Опишите свои эмоции</legend>
               <label class="form-review__label" for="review">Опишите свои эмоции</label>
-              <textarea class="form-review__text" id="review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              <textarea class="form-review__text" placeholder="Можно прям в красках, не стесняясь в выражениях" id="review" name="review">
               </textarea>
             </fieldset>
           </div>
@@ -124,7 +129,7 @@
       </main>
       <footer class="page-footer">
         <a class="page-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="140px" height="50px" alt="Логотип">
+          <img src="img/logo-pink-blue-mobile.svg" width="148px" height="50px" alt="Логотип">
         </a>
         <ul class="socials page-footer__socials">
           <li class="socials__item">
@@ -139,7 +144,9 @@
         </ul>
         <div class="page-footer__developers">
           <span>Разработано</span>
-          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="img/logo-htmlacademy.svg" width="27px" height="45px" alt="Логотип">
+          </a>
         </div>
       </footer>
     </div>

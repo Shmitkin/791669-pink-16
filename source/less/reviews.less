@@ -1,4 +1,6 @@
 .reviews {
+  margin-bottom: 42px;
+
   background-color: #ffffff;
 }
 
@@ -6,15 +8,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .reviews__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
-  margin: 0 0 30px 0;
+  margin: 0 0 33px 0;
   padding: 0;
 
   list-style: none;
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 
 .reviews__author-age {
@@ -33,7 +35,7 @@
 }
 
 .reviews__author {
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 
   font-style: normal;
   font-weight: 700;
@@ -45,6 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .reviews__text {
@@ -57,7 +60,11 @@
 }
 
 .reviews__toggles {
-  margin-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.reviews__arrow {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -66,24 +73,24 @@
     flex-direction: column;
     align-items: center;
     width: 660px;
-    margin: 0;
-  }
-
-  .reviews__list {
-    width: 660px;
+    margin: 0 0 22px 0;
   }
 
   .reviews__item {
     flex-direction: column-reverse;
     width: 620px;
+    padding: 0;
   }
 
   .reviews__author {
+    margin-bottom: 3px;
+
     font-size: 20px;
   }
 
   .reviews__author-age {
     display: block;
+    margin: 0;
 
     font-weight: 400;
     font-size: 14px;
@@ -91,7 +98,7 @@
   }
 
   .reviews__text {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     font-size: 18px;
   }
@@ -100,10 +107,44 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: 1200px;
+    margin: 0 0 8px 0;
+    padding: 0 120px;
   }
 
-  .reviews__list {
-    width: 960px;
+  .reviews__quotes {
+    width: 80px;
+    height: 66px;
+    margin-bottom: 44px;
+    margin-left: 7px;
+
+    background: url("../img/icon-quotes.svg") no-repeat;
+  }
+
+  .reviews__arrow {
+    display: block;
+    width: 22px;
+    height: 42px;
+    margin-top: 27px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0;
+
+    font-size: 0;
+    color: transparent;
+
+    background: url("../img/icon-review-arrow-left.svg");
+    border: none;
+
+    &:last-child {
+      transform: rotate(180deg);
+    }
+  }
+
+  .reviews__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .reviews__item {
@@ -116,5 +157,9 @@
 
   .reviews__author-age {
     font-size: 18px;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

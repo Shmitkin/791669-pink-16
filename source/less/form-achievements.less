@@ -1,8 +1,9 @@
 
 .form-achievements {
-  //  padding: 0 20px;
   order: 2;
   width: 320px;
+  margin-bottom: 31px;
+  padding-top: 38px;
 
   background-color: #f2f2f2;
 }
@@ -30,7 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 20px 0 90px;
+  padding: 43px 20px 28px 90px;
 }
 
 .form-achievements__checkbox {
@@ -44,9 +45,9 @@
 .form-achievements__label {
   position: relative;
 
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -54,12 +55,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -4px;
     left: -70px;
 
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 39px;
+    height: 39px;
 
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
@@ -67,15 +68,22 @@
   }
 }
 
+.form-achievements__label:last-child {
+  margin-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .form-achievements {
     order: 4;
     width: 620px;
+    margin-bottom: 57px;
 
     background: none;
   }
 
   .form-achievements__fieldset {
+    padding: 5px 7px;
+
     border: 2px solid #e5e5e5;
   }
 
@@ -86,6 +94,10 @@
   .form-achievements__legend {
     width: 435px;
   }
+
+  .form-achievements__label::before {
+    left: -59px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -93,5 +105,37 @@
     width: 940px;
 
     background: none;
+  }
+
+  .form-achievements__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 870px;
+    margin-left: 50px;
+    padding-right: 0;
+    padding-bottom: 3px;
+    padding-left: 0;
+  }
+
+  .form-achievements__label {
+    width: 260px;
+    padding-left: 60px;
+
+    &:last-child {
+      order: 6;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &::before {
+      left: 0;
+    }
   }
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 320px;
+  padding-bottom: 30px;
 }
 
 .contest-form__title {
@@ -18,8 +19,8 @@
 
 .contest-form__submit {
   width: 280px;
-  height: 64px;
-  margin-bottom: 30px;
+  height: 63px;
+  margin-bottom: 21px;
 
   font-weight: 700;
   font-size: 18px;
@@ -57,12 +58,19 @@
 @media (min-width: @tablet-width) {
   .contest-form {
     width: 660px;
+    margin-bottom: 26px;
+    padding-top: 7px;
   }
 
   .contest-form__button-container {
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
+  }
+
+  .contest-form__submit {
+    width: 300px;
+    margin-bottom: 10px;
   }
 }
 
@@ -72,6 +80,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 960px;
+    margin-bottom: 39px;
     padding: 0 10px;
   }
 
