@@ -106,11 +106,17 @@
 
     &:last-child {
       margin-bottom: 0;
+      padding-top: 0;
     }
   }
 
   .contacts__map {
     height: 372px;
+
+    &::before {
+      width: 660px;
+      height: 67px;
+    }
 
     background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
     background-position: center 73.4%;
@@ -124,7 +130,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    margin-bottom: 54px;
+    margin-bottom: 50px;
   }
 
   .contacts__wrapper {
@@ -163,6 +169,11 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
       background-size: 1200px auto;
+    }
+
+    &::before {
+    width: 1200px;
+    height: 100px;
     }
   }
 }

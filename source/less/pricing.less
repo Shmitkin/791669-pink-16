@@ -74,6 +74,7 @@
   display: flex;
 
   border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
 }
 
 .pricing-table__text {
@@ -96,6 +97,10 @@
 
   background-color: #ffffff;
   border-right: 2px solid #e5e5e5;
+}
+
+.pricing-table__data--first {
+  border-top: 2px solid #e5e5e5;
 }
 
 .pricing-table__title {
@@ -141,8 +146,9 @@
   .pricing {
     width: 660px;
     margin-bottom: 47px;
-    padding-top: 85px;
+    padding-top: 87px;
     padding-bottom: 68px;
+    background-image: linear-gradient(176deg, white 11%, transparent 11%);
   }
 
   .pricing__toggles {
@@ -178,6 +184,14 @@
     text-transform: none;
   }
 
+  .pricing-table__header-data--hit::before  {
+    top: 5px;
+    left: -29px;
+    height: 29px;
+    font-weight: 300;
+}
+
+
   .pricing-table__text {
     display: none;
   }
@@ -192,8 +206,8 @@
   }
 
   .pricing-table__header-data {
-    width: 155px;
-    height: 80px;
+    width: 156px;
+    height: 78px;
     padding: 0;
     padding-top: 18px;
     padding-bottom: 13px;
@@ -210,19 +224,28 @@
     margin-bottom: 65px;
     padding-top: 148px;
     padding-bottom: 96px;
+    background-image: linear-gradient(176deg, white 14%, transparent 14%);
   }
 
   .pricing-table__data {
     width: 235px;
-    height: 58px;
+    height: 59px;
   }
 
   .pricing-table__header-data {
     width: 235px;
-    height: 100px;
+    height: 97px;
     padding-top: 21px;
     padding-bottom: 25px;
   }
+
+.pricing-table__header-data--hit::before  {
+    top: 13px;
+    left: -34px;
+    height: 28px;
+    font-weight: 300;
+    width: 120px;
+}
 
   .pricing-table {
     width: 940px;

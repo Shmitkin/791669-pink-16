@@ -98,8 +98,7 @@
   .advantages {
     margin-bottom: 61px;
     padding: 0;
-
-    background: none;
+    background-image: linear-gradient(176deg, white 22%, transparent 22%);
   }
 
   .advantages__main-title {
@@ -119,8 +118,6 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 20px;
-
-    background-color: #f2f2f2;
   }
 
   .advantages__image-wrapper {
@@ -154,6 +151,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages {
+    background-image: linear-gradient(176deg, white 25%, transparent 25%);
+    margin-bottom: 58px;
+  }
+
   .advantages__wrapper {
     flex-direction: column-reverse;
     width: 1200px;
