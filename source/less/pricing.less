@@ -7,6 +7,7 @@
   border-collapse: collapse;
 
   background-color: #f2f2f2;
+  background-image: linear-gradient(176deg, white 5%, transparent 5%);
 }
 
 .pricing__wrapper {
@@ -46,6 +47,27 @@
 
   background-color: #283645;
   border-right: 2px solid #ffffff;
+  position: relative;
+}
+
+.pricing-table__header-data--hit {
+  overflow: hidden;
+
+  &::before {
+    content: "хит";
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    line-height: 28px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    background-color: #d22856;
+    top: 12px;
+    left: -27px;
+  }
 }
 
 .pricing-table__row {
