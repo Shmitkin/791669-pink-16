@@ -25,6 +25,27 @@
   margin-bottom: 20px;
 }
 
+.photo__item--panorama {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  }
+}
+
+
 .photo__review {
   display: flex;
   flex-direction: row;
@@ -136,6 +157,10 @@
   .photo__item--panorama {
     width: 620px;
     margin-bottom: 51px;
+
+    &::before {
+      top: 57px;
+    }
   }
 
   .photo__item--panorama img {
@@ -201,6 +226,10 @@
 
     & .photo__text {
       min-height: initial;
+    }
+
+    &::before {
+      top: 54px;
     }
   }
 
