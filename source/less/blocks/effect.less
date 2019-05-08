@@ -7,19 +7,30 @@
     display: flex;
     justify-content: space-between;
     width: 660px;
-    margin-bottom: 15px;
-    padding: 59px 20px 20px 20px;
+    padding: 59px 20px 35px 20px;
 
     background-color: #ffffff;
   }
 
   .effect__timer {
-    width: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 238px;
     height: 278px;
 
-    background: url("../img/icon-timer.svg");
+    font-weight: 700;
+    font-size: 95px;
+    text-align: center;
+    color: #d22856;
+
+    background-image: url("../img/24-timer.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    & span {
+      margin-top: 21px;
+    }
   }
 
   .effect__investigation {
@@ -42,11 +53,20 @@
 
   .effect__description {
     margin: 0 0 13px 0;
+    padding-right: 10px;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
+  }
+
+  .effect__link {
+    font-size: 14px;
+    color: #d22856;
+    text-decoration: none;
+
+    border-bottom: 1px solid #d22856;
   }
 }
 
@@ -54,14 +74,14 @@
   .effect {
     align-items: flex-end;
     width: 1200px;
-    padding: 60px 130px 64px 130px;
+    padding: 60px 130px 66px 130px;
 
     background-color: #f2f2f2;
   }
 
   .effect__investigation {
     width: 574px;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
   }
 
   .effect__description {
@@ -81,7 +101,13 @@
     width: 300px;
     height: 350px;
 
+    font-size: 118px;
+
     background-size: 100%;
+
+    & span {
+      margin-top: 36px;
+    }
   }
 
   .effect__link {

@@ -67,10 +67,10 @@
               <legend class="form-achievements__legend">Ваши безбашенные достижения в путешествии</legend>
               <div class="form-achievements__container">
                 <label class="form-achievements__label" for="shark-selfie">Сделал селфи с акулой
-                  <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="shark-selfie" id="shark-selfie">
+                  <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="shark-selfie" id="shark-selfie" checked>
                 </label>
                 <label class="form-achievements__label" for="sunburned">Обгорел на пляже
-                  <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="sunburned" id="sunburned">
+                  <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="sunburned" id="sunburned" checked>
                 </label>
                 <label class="form-achievements__label" for="chuck-norris">Видел Чака Норриса
                   <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="chuck-norris" id="chuck-norris">
@@ -79,7 +79,7 @@
                   <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="souvenir" id="souvenir">
                 </label>
                 <label class="form-achievements__label" for="hold-the-tower">Удержал башню
-                  <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="hold-the-tower" id="hold-the-tower">
+                  <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="hold-the-tower" id="hold-the-tower" checked>
                 </label>
                 <label class="form-achievements__label" for="hotel-destroy">Разгромил отель
                   <input class="form-achievements__checkbox" type="checkbox" name="achievements" value="hotel-destroy" id="hotel-destroy">
@@ -104,12 +104,15 @@
             <fieldset class="form-platform__fieldset">
               <legend class="form-platform__legend">С каким приложением путешествовали?</legend>
               <div class="form-platform__container">
-                <input class="form-platform__radio" type="radio" name="platform" value="ios" id="ios">
-                <label class="form-platform__label" for="ios">Pink для iOS</label>
-                <input class="form-platform__radio" type="radio" name="platform" value="android" id="android">
-                <label class="form-platform__label" for="android">Pink на Android</label>
-                <input class="form-platform__radio" type="radio" name="platform" value="windows-phone" id="windows-phone">
-                <label class="form-platform__label" for="windows-phone">Windows Phone</label>
+                <label class="form-platform__label" for="ios">Pink для iOS
+                  <input class="form-platform__radio" type="radio" name="platform" value="ios" id="ios" checked>
+                </label>
+                <label class="form-platform__label" for="android">Pink на Android
+                  <input class="form-platform__radio" type="radio" name="platform" value="android" id="android">
+                </label>
+                <label class="form-platform__label" for="windows-phone">Windows Phone
+                  <input class="form-platform__radio" type="radio" name="platform" value="windows-phone" id="windows-phone">
+                </label>
               </div>
             </fieldset>
           </div>
@@ -117,8 +120,7 @@
             <fieldset class="form-review__fieldset">
               <legend class="form-review__legend" for="review">Опишите свои эмоции</legend>
               <label class="form-review__label" for="review">Опишите свои эмоции</label>
-              <textarea class="form-review__text" placeholder="Можно прям в красках, не стесняясь в выражениях" id="review" name="review">
-              </textarea>
+              <textarea class="form-review__text" placeholder="Можно прям в красках, не стесняясь в выражениях" id="review" name="review"></textarea>
             </fieldset>
           </div>
           <div class="contest-form__button-container">

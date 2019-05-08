@@ -25,6 +25,30 @@
   margin-bottom: 20px;
 }
 
+.photo__item--panorama {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 140px;
+    height: 36px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #d22856;
+  }
+}
+
+
 .photo__review {
   display: flex;
   flex-direction: row;
@@ -84,19 +108,19 @@
 
   background: none;
   border: none;
-}
 
-.photo__like-button::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 2px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
 
-  display: block;
-  width: 13px;
-  height: 13px;
+    display: block;
+    width: 13px;
+    height: 13px;
 
-  background: url("../img/icon-heart.svg") no-repeat;
+    background: url("../img/icon-heart.svg") no-repeat;
+  }
 }
 
 
@@ -133,16 +157,6 @@
     height: 300px;
   }
 
-  .photo__item--panorama {
-    width: 620px;
-    margin-bottom: 51px;
-  }
-
-  .photo__item--panorama img {
-    width: 660px;
-    height: 509px;
-  }
-
   .photo__review {
     align-content: flex-start;
     min-height: 155px;
@@ -152,32 +166,46 @@
   .photo__like-button {
     margin-left: 0;
     padding: 0;
+
+    &::before {
+      top: 5px;
+      left: 227px;
+    }
   }
 
-  .photo__like-button::before {
-    top: 5px;
-    left: 227px;
-  }
+  .photo__item--panorama {
+    width: 620px;
+    margin-bottom: 51px;
 
-  .photo__item--panorama .photo__like-button::before {
-    top: 4px;
-    left: 178px;
-  }
+    &::before {
+      top: 57px;
+    }
 
-  .photo__item--panorama .photo__like-button {
-    margin-left: auto;
-    padding-right: 36px;
+    & img {
+      width: 660px;
+      height: 509px;
+    }
 
-    text-align: right;
-  }
+    & .photo__like-button::before {
+      top: 4px;
+      left: 178px;
+    }
 
-  .photo__item--panorama .photo__text {
-    order: 2;
-    margin: 0 0 0 0;
-  }
+    & .photo__like-button {
+      margin-left: auto;
+      padding-right: 36px;
 
-  .photo__item--panorama .photo__review {
-    min-height: 120px;
+      text-align: right;
+    }
+
+    & .photo__text {
+      order: 2;
+      margin: 0 0 0 0;
+    }
+
+    & .photo__review {
+      min-height: 120px;
+    }
   }
 }
 
@@ -202,15 +230,19 @@
     & .photo__text {
       min-height: initial;
     }
-  }
 
-  .photo__item--panorama img {
-    width: 1200px;
-    height: 505px;
-  }
+    &::before {
+      top: 54px;
+    }
 
-  .photo__item--panorama .photo__review {
-    min-height: 100px;
+    & img {
+      width: 1200px;
+      height: 505px;
+    }
+
+    & .photo__review {
+      min-height: 100px;
+    }
   }
 
   .photo__list {

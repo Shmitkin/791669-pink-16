@@ -43,13 +43,13 @@
         <h1 class="visually-hidden">Приложение Pink - Раскрась все в розовый цвет!</h1>
         <div class="promo page-main__promo">
           <div class="promo__container">
-            <p class="promo__image-wrapper">
+            <div class="promo__image-wrapper">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
                 <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
                 <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="258px" height="286px" alt="В руке белый телефон и на нем открыто приложение Pink">
               </picture>
-            </p>
+            </div>
             <div class="promo__wrapper">
               <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
               <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
@@ -82,7 +82,7 @@
             <ul class="advantages__text-list">
               <li class="advantages__text-item">
                 <h3 class="advantages__title">Поднимает настроение</h3>
-                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депресию буквально в несколько кликов</p>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депресcию буквально в несколько кликов</p>
               </li>
               <li class="advantages__text-item">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
@@ -124,7 +124,9 @@
             </ul>
           </div>
           <div class="advantages__effect effect">
-            <div class="effect__timer"></div>
+            <div class="effect__timer">
+              <span>24</span>
+            </div>
             <div class="effect__investigation">
               <h3 class="effect__title">Эффект на 24 часа!</h3>
               <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -144,7 +146,7 @@
                     <cite class="reviews__author">Николай Петров</cite>
                     <p class="reviews__author-age">25 лет, водитель трамвая</p>
                   </div>
-                  <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+                  <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                   </blockquote>
                 </li>
               </ul>
@@ -168,7 +170,7 @@
                   <h3 class="pricing-table__title">База</h3>
                   <p class="pricing-table__header-cost">1,99 USD</p>
                 </th>
-                <th class="pricing-table__header-data">
+                <th class="pricing-table__header-data pricing-table__header-data--hit">
                   <h3 class="pricing-table__title">Стандарт</h3>
                   <p class="pricing-table__header-cost">3,99 USD</p>
                 </th>
@@ -178,7 +180,7 @@
                 </th>
               </tr>
               <tr class="pricing-table__row">
-                <td class="pricing-table__data">
+                <td class="pricing-table__data pricing-table__data--first">
                   <p class="pricing-table__text--main">Розовый фильтр</p>
                 </td>
                 <td class="pricing-table__data">
