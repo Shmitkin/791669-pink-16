@@ -13,18 +13,20 @@
   }
 
   .effect__timer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 238px;
     height: 278px;
+
+    font-weight: 700;
+    font-size: 95px;
+    text-align: center;
+    color: #d22856;
+
     background-image: url(../img/24-timer.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    font-size: 95px;
-    font-weight: 700;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #d22856;
 
     & span {
       margin-top: 21px;
@@ -51,18 +53,19 @@
 
   .effect__description {
     margin: 0 0 13px 0;
+    padding-right: 10px;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
-    padding-right: 10px;
   }
 
   .effect__link {
-    color: #d22856;
     font-size: 14px;
+    color: #d22856;
     text-decoration: none;
+
     border-bottom: 1px solid #d22856;
   }
 }
@@ -97,6 +100,7 @@
   .effect__timer {
     width: 300px;
     height: 350px;
+
     font-size: 118px;
 
     background-size: 100%;

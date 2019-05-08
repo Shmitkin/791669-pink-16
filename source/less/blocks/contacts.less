@@ -47,6 +47,7 @@
 
 .contacts__map {
   position: relative;
+
   height: 200px;
   overflow: hidden;
 
@@ -60,15 +61,16 @@
 
   &::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
     display: block;
-    position:absolute;
     width: 320px;
     height: 35px;
-    top: 0px;
-    left: 0px;
-    background:
-      linear-gradient(to right top, transparent 50%, white 50%) left / 50% 100% no-repeat,
-      linear-gradient(to left top, transparent 50%, white 50%) right / 50% 100% no-repeat;
+
+    background: linear-gradient(to right top, transparent 50%, white 50%) left / 50% 100% no-repeat,
+    linear-gradient(to left top, transparent 50%, white 50%) right / 50% 100% no-repeat;
   }
 }
 
@@ -113,13 +115,13 @@
   .contacts__map {
     height: 372px;
 
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
+    background-position: center 73.4%;
+
     &::before {
       width: 660px;
       height: 67px;
     }
-
-    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
-    background-position: center 73.4%;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -172,8 +174,8 @@
     }
 
     &::before {
-    width: 1200px;
-    height: 100px;
+      width: 1200px;
+      height: 100px;
     }
   }
 }
