@@ -32,6 +32,23 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  &--active:hover {
+    color: #ffffff;
+  }
+
+  &--active:active {
+    opacity: 1;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -42,6 +59,7 @@
   .main-nav__list {
     flex-direction: row;
     justify-content: flex-end;
+    padding-right: 9px;
   }
 
   .main-nav__link {
@@ -52,8 +70,13 @@
   }
 
   .main-nav__item {
-    margin-left: 60px;
+    margin-left: 80px;
 
     border: none;
+    padding: 0;
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }

@@ -40,9 +40,19 @@
 
   background: none;
   border: 2px solid #e5e5e5;
+  outline: none;
 
   &::placeholder {
     color: #283645;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
   }
 }
 
