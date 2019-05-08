@@ -51,9 +51,19 @@
 
   background: none;
   border: 2px solid #e5e5e5;
+  outline: none;
 
   &::placeholder {
     color: #283645;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
   }
 }
 
@@ -79,13 +89,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
-
+      top: 2px;
+      right: 2px;
       display: block;
-      width: 62px;
-      height: 62px;
-
+      width: 60px;
+      height: 59px;
       background-color: #e5e5e5;
     }
 
