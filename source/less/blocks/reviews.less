@@ -1,14 +1,14 @@
 .reviews {
-  margin-bottom: 42px;
 
   background-color: #ffffff;
 }
 
-.reviews__wrapper {
+.reviews__container {
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .reviews__list {
@@ -68,12 +68,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews {
+  .reviews__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 660px;
-    margin: 0 0 22px 0;
   }
 
   .reviews__item {
@@ -105,10 +104,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .reviews {
-    width: 1200px;
-    margin: 0 0 8px 0;
-    padding: 0 120px;
+
+  .reviews__container {
+    width: 960px;
+    padding: 0;
+
   }
 
   .reviews__quotes {
@@ -141,7 +141,7 @@
     }
   }
 
-  .reviews__container {
+  .reviews__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

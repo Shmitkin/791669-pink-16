@@ -4,10 +4,11 @@
   background: url("../img/bg-back-mobile@1x.jpg");
   background-color: #1d2631;
   background-position-y: -67px;
+  background-size: 100% auto;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: 100% auto;
   }
 }
 
@@ -24,16 +25,21 @@
 .promo__container {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .promo__wrapper {
+  background-color: #1d2631;
+}
+
+.promo__buttons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 320px;
   padding: 29px 20px 15px 20px;
-
-  background-color: #1d2631;
+  margin: 0 auto;
 }
 
 .promo__image-wrapper {
@@ -86,12 +92,15 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    margin-bottom: 50px;
-    padding: 73px 20px 0 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 73px;
 
     background: url("../img/bg-back-tablet@1x.jpg");
     background-position-x: 50%;
     background-position-y: -110px;
+    background-repeat: no-repeat;
+
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -101,21 +110,28 @@
 
   .promo__container {
     position: relative;
+    padding: 0 20px 0 20px;
 
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
+    width: 660px;
   }
 
   .promo__wrapper {
-    position: absolute;
-    top: 19px;
-    left: 0;
+    position: relative;
+    background: none;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .promo__buttons-container {
+            position: absolute;
+    bottom: 95px;
+    left: 20px;
 
     width: 300px;
     padding: 0;
-
-    background: none;
   }
 
   .promo__title {
@@ -151,22 +167,33 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    width: 1200px;
-    margin-bottom: 67px;
+    margin-bottom: 27px;
     padding-top: 209px;
-    padding-right: 120px;
-    padding-left: 120px;
 
     background: url("../img/bg-back-desktop@1x.jpg") 50% top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto;
+      background-size: auto 100%;
     }
   }
 
+  .promo__container {
+    width: 960px;
+    padding: 0;
+  }
+
   .promo__wrapper {
-    top: 9px;
+    position: relative;
+    background: none;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .promo__buttons-container {
+    bottom: 107px;
     left: 10px;
   }
 
