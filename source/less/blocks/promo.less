@@ -38,8 +38,8 @@
   flex-direction: column;
   align-items: center;
   width: 320px;
-  padding: 29px 20px 15px 20px;
   margin: 0 auto;
+  padding: 29px 20px 15px 20px;
 }
 
 .promo__image-wrapper {
@@ -70,8 +70,9 @@
   border-radius: 30px;
 
   &:hover {
-    background-color: #ffffff;
     color: #d22856;
+
+    background-color: #ffffff;
   }
 
   &:active {
@@ -97,9 +98,9 @@
     padding-top: 73px;
 
     background: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: -110px;
-    background-repeat: no-repeat;
 
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -110,23 +111,25 @@
 
   .promo__container {
     position: relative;
-    padding: 0 20px 0 20px;
 
     display: flex;
     flex-direction: row-reverse;
-    margin: 0 auto;
     width: 660px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
   }
 
   .promo__wrapper {
     position: relative;
-    background: none;
+
     width: 660px;
     margin: 0 auto;
+
+    background: none;
   }
 
   .promo__buttons-container {
-            position: absolute;
+    position: absolute;
     bottom: 95px;
     left: 20px;
 
@@ -171,8 +174,8 @@
     padding-top: 209px;
 
     background: url("../img/bg-back-desktop@1x.jpg") 50% top;
-    background-size: auto 100%;
     background-repeat: no-repeat;
+    background-size: auto 100%;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -187,9 +190,11 @@
 
   .promo__wrapper {
     position: relative;
-    background: none;
+
     width: 960px;
     margin: 0 auto;
+
+    background: none;
   }
 
   .promo__buttons-container {

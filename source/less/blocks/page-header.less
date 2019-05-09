@@ -1,12 +1,16 @@
-.page-header {
-}
+
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #283645;
   min-width: 320px;
+
+  background-color: #283645;
+}
+
+.page-header__logo {
+  color: #ffffff;
 }
 
 .page-header__logo-image {
@@ -40,8 +44,6 @@
 
 
 @media (min-width: @tablet-width) {
-  .page-header {
-  }
 
   .page-header__logo-wrapper {
     height: 110px;
@@ -59,8 +61,10 @@
   .page-header {
     position: absolute;
     z-index: 10;
-    background-color: rgba(40, 0, 0, 0.3);
+
     width: 100%;
+
+    background-color: rgba(40, 0, 0, 0.3);
   }
 
   .page-header__wrapper {
@@ -68,6 +72,7 @@
     justify-content: space-between;
     width: 960px;
     margin: 0 auto;
+
     background: none;
   }
 
