@@ -1,13 +1,16 @@
 .pricing {
   margin-bottom: 42px;
-  padding-top: 61px;
-  padding-bottom: 47px;
-  overflow: hidden;
-
-  border-collapse: collapse;
+  padding-top: 42px;
 
   background-color: #f2f2f2;
-  background-image: linear-gradient(176deg, white 5%, transparent 5%);
+  background-image: linear-gradient(175.7deg, white 12%, transparent 12%);
+}
+
+.pricing__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 61px;
+  padding-bottom: 47px;
 }
 
 .pricing__wrapper {
@@ -23,11 +26,12 @@
 .pricing-table {
   position: absolute;
   top: 30px;
-  left: -534px;
+  left: 50%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: -696px;
 }
 
 .pricing-table__header-row {
@@ -148,12 +152,15 @@
 
 @media (min-width: @tablet-width) {
   .pricing {
-    width: 660px;
     margin-bottom: 47px;
-    padding-top: 87px;
-    padding-bottom: 68px;
 
-    background-image: linear-gradient(176deg, white 11%, transparent 11%);
+    background-image: linear-gradient(175.7deg, white 16%, transparent 16%);
+  }
+
+  .pricing__container {
+    width: 660px;
+    padding-top: 68px;
+    padding-bottom: 68px;
   }
 
   .pricing__toggles {
@@ -168,6 +175,7 @@
     position: static;
 
     width: 620px;
+    margin-left: 0;
   }
 
   .pricing-table__title {
@@ -227,12 +235,15 @@
 
 @media (min-width: @desktop-width) {
   .pricing {
-    width: 1200px;
     margin-bottom: 65px;
-    padding-top: 148px;
-    padding-bottom: 96px;
 
     background-image: linear-gradient(176deg, white 14%, transparent 14%);
+  }
+
+  .pricing__container {
+    width: 960px;
+    padding-top: 113px;
+    padding-bottom: 96px;
   }
 
   .pricing-table__data {

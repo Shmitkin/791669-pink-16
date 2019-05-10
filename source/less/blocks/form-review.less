@@ -40,6 +40,7 @@
   min-height: 201px;
   margin: 0;
   padding: 14px 18px;
+  outline: none;
 
   font-weight: 400;
   font-size: 18px;
@@ -53,6 +54,15 @@
 
   &::placeholder {
     color: #283645;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
   }
 }
 
