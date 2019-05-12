@@ -58,6 +58,10 @@
   text-align: center;
 }
 
+  .reviews__quotes {
+    display: none;
+  }
+
 .reviews__toggles {
   margin-bottom: 0;
 }
@@ -109,16 +113,16 @@
   }
 
   .reviews__quotes {
+    display: initial;
     width: 80px;
     height: 66px;
     margin-top: 16px;
     margin-bottom: 46px;
     margin-left: 7px;
-
-    background: url("../img/icon-quotes.svg") no-repeat;
   }
 
   .reviews__arrow {
+    outline: none;
     display: block;
     width: 22px;
     height: 42px;
@@ -129,12 +133,16 @@
 
     font-size: 0;
     color: transparent;
-
-    background: url("../img/icon-review-arrow-left.svg");
     border: none;
+    background: none;
 
-    &:last-child {
-      transform: rotate(180deg);
+    &:hover svg,
+    &:focus svg {
+      fill: #7e868f;
+    }
+
+    &:active svg {
+      fill: #e9ebec;
     }
   }
 

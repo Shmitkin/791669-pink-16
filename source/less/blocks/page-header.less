@@ -10,7 +10,20 @@
 }
 
 .page-header__logo {
-  color: #ffffff;
+  &:hover svg,
+  &:focus svg {
+    fill: #d22856;
+  }
+
+  &:active svg {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .logo-tablet,
+  .logo-desktop {
+    display: none;
+  }
 }
 
 .page-header__logo-image {
@@ -43,19 +56,40 @@
 }
 
 @media (min-width: @tablet-width) {
+
+  .page-header__logo {
+    .logo-tablet {
+      display: initial;
+    }
+
+    .logo-mobile {
+      display: none;
+    }
+  }
+
   .page-header__logo-wrapper {
     height: 110px;
   }
 
   .page-header__logo-image {
     width: 100%;
-    height: 40px;
+    height: 41px;
     margin-top: -12px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .page-header__logo {
+    .logo-tablet {
+      display: none;
+    }
+
+    .logo-desktop {
+      display: initial;
+    }
+  }
+
   .page-header {
     position: absolute;
     z-index: 10;
