@@ -16,24 +16,28 @@
 
 
 .socials__link {
-  display: block;
+  outline: none;
+  display: flex;
   width: 50px;
   height: 50px;
+  align-items: center;
+  justify-content: center;
 
   border: 3px solid #e9ebec;
   border-radius: 25px;
-}
 
-.socials__link--twitter {
-  background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
-}
+  &--youtube {
+    padding-left: 4px;
+  }
 
-.socials__link--facebook {
-  background: url("../img/icon-facebook.svg") no-repeat 50% 50%;
-}
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
 
-.socials__link--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

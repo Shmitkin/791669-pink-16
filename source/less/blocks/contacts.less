@@ -50,9 +50,11 @@
   text-decoration: none;
 
   &--mail {
+    outline: none;
     color: #d22856;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #283645;
       text-decoration: underline;
     }
@@ -73,7 +75,7 @@
   background-size: 100% auto;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.png");
+    background-image: url("../img/bg-map-mobile@2x.jpg");
     background-size: 100% auto;
   }
 

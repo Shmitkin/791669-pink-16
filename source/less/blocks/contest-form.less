@@ -18,6 +18,7 @@
 }
 
 .contest-form__submit {
+  outline: none;
   width: 280px;
   height: 63px;
   margin-bottom: 21px;
@@ -31,6 +32,19 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #7dbd99;
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .contest-form__required {

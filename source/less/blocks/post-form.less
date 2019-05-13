@@ -18,6 +18,7 @@
 
 .post-form__title {
   margin: 0 auto;
+  width: 280px;
 
   font-weight: 400;
   font-size: 14px;
@@ -44,69 +45,89 @@
 }
 
 .post-form__button-wrapper {
-  display: inline-block;
-  margin-bottom: 19px;
+  margin: 0 auto 19px auto;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
 
   text-align: center;
 }
 
 .post-form__button-adjustment {
-  width: 50px;
-  height: 50px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  width: 48px;
+  height: 48px;
   margin: 0 13px 0 13px;
-
   border: none;
-}
 
-.post-form__button-crop {
-  background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-}
+  & svg {
+    opacity: 0.3;
+  }
 
-.post-form__button-fill {
-  background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-}
+  &:hover svg,
+  &:focus svg {
+    opacity: 0.5
+  }
 
-.post-form__button-contrast {
-  background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-}
-
-.post-form__adjustment {
-  position: relative;
-
-  width: 245px;
-  height: 2px;
-  margin-bottom: 34px;
-
-  background-color: #d22856;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -9px;
-    left: -53px;
-
-    width: 26px;
-    height: 26px;
+  &:active svg,
+  &--active svg {
+    opacity: 1;
+    fill: #d22856;
   }
 }
 
-.post-form__adjustment--crop::before {
-  background: url("../img/icon-editor-crop.svg");
-  background-size: cover;
+.post-form__adjustment {
+  width: 100%;
+  opacity: 0;
 }
 
-.post-form__adjustment--fill::before {
-  background: url("../img/icon-editor-fill.svg");
-  background-size: cover;
-}
+.post-form__adjustment-container {
+  position: relative;
+  outline: none;
+  margin: 0 auto;
 
-.post-form__adjustment--contrast::before {
-  background: url("../img/icon-editor-contrast.svg") no-repeat;
-  background-position: 50% 50%;
-  background-size: 70% 70%;
+  width: 245px;
+
+  &--optional {
+    margin-bottom: 34px;
+  }
+
+  &::before {
+    content: "";
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    background-color: #283645;
+  }
+
+  &--circle {
+    position: absolute;
+    z-index: 10;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d22856;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    background-color: #f2f2f2;
+  }
+
+  &:active &--circle {
+    background-color: #d22856;
+  }
 }
 
 .post-form__button {
+  outline: none;
   display: block;
   width: 280px;
   margin-bottom: 10px;
@@ -120,12 +141,33 @@
   background-color: #f2f2f2;
   border: 3px solid #d22856;
   border-radius: 30px;
-}
 
-.post-form__button--disabled {
-  color: #dddfe0;
+  &:hover,
+  &:focus {
+    background-color: #d22856;
+    color: #ffffff;
+  }
 
-  border-color: #dddfe0;
+  &:active {
+    color: #e08195;
+  }
+
+  &--reset {
+    color: #dddfe0;
+    border-color: #dddfe0;
+
+    &:hover,
+    &:focus {
+      border-color: #b5b9be;
+      color: #c4c6c8;
+      background: none;
+    }
+
+    &:active {
+      background-color: #b5b9be;
+      color: #cdd0d3;
+    }
+  }
 }
 
 .post-form__adjustment-list {
@@ -139,7 +181,7 @@
 
 .post-form__adjustment-item {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 275px;
   height: 56px;
@@ -147,6 +189,7 @@
   margin-left: auto;
   padding-top: 16px;
   padding-right: 18px;
+  padding-bottom: 34px;
 
   border-bottom: 1px solid #dddfe0;
 }
@@ -169,6 +212,7 @@
 
   .post-form__title {
     font-size: 18px;
+    width: initial;
   }
 
   .post-form__wrapper {
@@ -193,12 +237,13 @@
     display: none;
   }
 
-  .post-form__adjustment--optional {
-    display: none;
-  }
-
-  .post-form__adjustment {
+  .post-form__adjustment-container {
     width: 200px;
+    margin: 0;
+
+    &--optional {
+      display: none;
+    }
   }
 
   .post-form__adjustment-list {
@@ -251,17 +296,14 @@
   .post-form__adjustment-item {
     width: 410px;
     padding-right: 23px;
+
+    & svg {
+      width: 48px;
+      height: auto;
+    }
   }
 
-  .post-form__adjustment {
+  .post-form__adjustment-container {
     width: 288px;
-
-    &::before {
-      top: -23px;
-      left: -95px;
-
-      width: 46px;
-      height: 48px;
-    }
   }
 }

@@ -10,6 +10,8 @@
 }
 
 .page-header__logo {
+  outline: none;
+
   &:hover svg,
   &:focus svg {
     fill: #d22856;
@@ -20,8 +22,8 @@
     opacity: 0.3;
   }
 
-  .logo-tablet,
-  .logo-desktop {
+  &--tablet,
+  &--desktop {
     display: none;
   }
 }
@@ -57,11 +59,16 @@
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    .logo-tablet {
+    & svg {
+      width: 147px;
+      height: 41px;
+    }
+
+    &--tablet {
       display: initial;
     }
 
-    .logo-mobile {
+    &--mobile {
       display: none;
     }
   }
@@ -80,11 +87,11 @@
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    .logo-tablet {
+    &--tablet {
       display: none;
     }
 
-    .logo-desktop {
+    &--desktop {
       display: initial;
     }
   }
