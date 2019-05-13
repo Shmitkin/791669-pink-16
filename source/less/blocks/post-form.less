@@ -17,8 +17,8 @@
 }
 
 .post-form__title {
-  margin: 0 auto;
   width: 280px;
+  margin: 0 auto;
 
   font-weight: 400;
   font-size: 14px;
@@ -45,25 +45,26 @@
 }
 
 .post-form__button-wrapper {
-  margin: 0 auto 19px auto;
-  width: 200px;
   display: flex;
   justify-content: space-between;
+  width: 200px;
+  margin: 0 auto 19px auto;
 
   text-align: center;
 }
 
 .post-form__button-adjustment {
-  outline: none;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0;
-  background: none;
+  align-items: center;
   width: 48px;
   height: 48px;
   margin: 0 13px 0 13px;
+  padding: 0;
+
+  background: none;
   border: none;
+  outline: none;
 
   & svg {
     opacity: 0.3;
@@ -71,27 +72,30 @@
 
   &:hover svg,
   &:focus svg {
-    opacity: 0.5
+    opacity: 0.5;
   }
 
   &:active svg,
   &--active svg {
     opacity: 1;
+
     fill: #d22856;
   }
 }
 
 .post-form__adjustment {
   width: 100%;
+
   opacity: 0;
 }
 
 .post-form__adjustment-container {
   position: relative;
-  outline: none;
-  margin: 0 auto;
 
   width: 245px;
+  margin: 0 auto;
+
+  outline: none;
 
   &--optional {
     margin-bottom: 34px;
@@ -99,26 +103,30 @@
 
   &::before {
     content: "";
-    z-index: 5;
-    width: 100%;
     position: absolute;
     top: 50%;
     left: 0;
+    z-index: 5;
+
+    width: 100%;
     height: 2px;
+
     background-color: #283645;
   }
 
   &--circle {
     position: absolute;
-    z-index: 10;
-    width: 14px;
-    height: 14px;
-    border: 2px solid #d22856;
-    border-radius: 15px;
     top: 50%;
     left: 50%;
+    z-index: 10;
+
+    width: 14px;
+    height: 14px;
     margin-top: -6px;
+
     background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 15px;
   }
 
   &:active &--circle {
@@ -127,7 +135,6 @@
 }
 
 .post-form__button {
-  outline: none;
   display: block;
   width: 280px;
   margin-bottom: 10px;
@@ -141,11 +148,13 @@
   background-color: #f2f2f2;
   border: 3px solid #d22856;
   border-radius: 30px;
+  outline: none;
 
   &:hover,
   &:focus {
-    background-color: #d22856;
     color: #ffffff;
+
+    background-color: #d22856;
   }
 
   &:active {
@@ -154,18 +163,21 @@
 
   &--reset {
     color: #dddfe0;
+
     border-color: #dddfe0;
 
     &:hover,
     &:focus {
-      border-color: #b5b9be;
       color: #c4c6c8;
+
       background: none;
+      border-color: #b5b9be;
     }
 
     &:active {
-      background-color: #b5b9be;
       color: #cdd0d3;
+
+      background-color: #b5b9be;
     }
   }
 }
@@ -211,8 +223,9 @@
   }
 
   .post-form__title {
-    font-size: 18px;
     width: initial;
+
+    font-size: 18px;
   }
 
   .post-form__wrapper {
