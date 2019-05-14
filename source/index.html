@@ -2,22 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="page-wrapper">
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75px" height="24px" alt="Логотип PINK">
-              </picture>
+              <svg width="74" height="23" fill="#FFF">
+                <use class="page-header__logo--mobile" xlink:href="#logo-pink-white-mobile"></use>
+                <use class="page-header__logo--tablet" xlink:href="#logo-pink-white-tablet"></use>
+                <use class="page-header__logo--desktop" xlink:href="#logo-pink-white-desktop"></use>
+              </svg>
             </a>
             <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -45,30 +48,39 @@
           <div class="promo__container">
             <div class="promo__image-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
-                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
-                <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="258px" height="286px" alt="В руке белый телефон и на нем открыто приложение Pink">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="В руке белый телефон и на нем открыто приложение Pink">
               </picture>
             </div>
           </div>
           <div class="promo__wrapper">
             <div class="promo__buttons-container">
               <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
-              <a class="promo__download-button" href="#" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
+              <a class="promo__download-button" href="https://www.apple.com/ru/ios/app-store/" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
               <ul class="promo-icons">
                 <li class="promo-icons__item">
-                  <a class="promo-icons__link" href="#">
-                    <img src="img/logo-apple.svg" width="48px" height="56px" alt="Иконка загрузки приложения для IOS">
+                  <a class="promo-icons__link" href="https://www.apple.com/ru/ios/app-store/" target="_blank" rel="noopener noreferrer">
+                    <svg width="47" height="57">
+                      <use xlink:href="#logo-apple"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="promo-icons__item">
-                  <a class="promo-icons__link" href="#">
-                    <img src="img/logo-android.svg" width="43px" height="47px" alt="Иконка загрузки прилождения для Android">
+                  <a class="promo-icons__link" href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+                    <svg width="42" height="47">
+                      <use xlink:href="#logo-android"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="promo-icons__item">
-                  <a class="promo-icons__link" href="#">
-                    <img src="img/logo-microsoft.svg" width="44px" height="41px" alt="Иконка загрузки приложения для Windows Phone">
+                  <a class="promo-icons__link" href="https://www.microsoft.com/ru-ru/store/b/home" target="_blank" rel="noopener noreferrer">
+                    <svg width="44" height="42">
+                      <use xlink:href="#logo-microsoft"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -100,27 +112,34 @@
                 <li class="advantages__image-item advantages__image-item--disabled">
                   <p class="advantages__image-wrapper">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@2x.png">
-                      <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png, img/iphone-screen-1-tablet@2x.png">
-                      <img class="advantages__image" alt="Экран смартфона с приложением PINK">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                      <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+                      <img class="advantages__image" src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" width="157" height="320" alt="Экран смартфона с приложением PINK">
                     </picture>
                   </p>
                 </li>
                 <li class="advantages__image-item advantages__image-item--disabled">
                   <p class="advantages__image-wrapper">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png">
-                      <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png, img/iphone-screen-2-tablet@2x.png">
-                      <img class="advantages__image" alt="Экран смартфона с приложением PINK">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                      <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+                      <img class="advantages__image" src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" width="157" height="320" alt="Экран смартфона с приложением PINK">
                     </picture>
                   </p>
                 </li>
                 <li class="advantages__image-item">
                   <p class="advantages__image-wrapper">
                     <picture>
-                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png">
-                      <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png">
-                      <img class="advantages__image"src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png" width="157px" height="320px" alt="Экран смартфона с приложением PINK">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                      <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                      <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Экран смартфона с приложением PINK">
                     </picture>
                   </p>
                 </li>
@@ -143,9 +162,17 @@
           <section class="reviews">
             <div class="reviews__container">
             <h2 class="visually-hidden">Отзывы наших пользователей</h2>
-            <div class="reviews__quotes"></div>
+            <div class="reviews__quotes">
+              <svg width="79" height="64">
+                <use xlink:href="#icon-quotes"></use>
+              </svg>
+            </div>
             <div class="reviews__wrapper">
-              <button class="reviews__arrow">Назад</button>
+              <button class="reviews__arrow">
+                <svg width="22" height="42" fill="#bec2c7">
+                  <use xlink:href="#icon-review-arrow-left"></use>
+                </svg>
+              </button>
               <ul class="reviews__list reviews-slider">
                 <li class="reviews__item reviews-slider__item">
                   <div class="reviews__author-wrapper">
@@ -156,7 +183,11 @@
                   </blockquote>
                 </li>
               </ul>
-              <button class="reviews__arrow">Вперед</button>
+              <button class="reviews__arrow">
+                <svg width="22" height="42" fill="#bec2c7">
+                  <use xlink:href="#icon-review-arrow-right"></use>
+                </svg>
+              </button>
             </div>
             <p class="reviews__toggles slider-toggles">
               <button class="slider-toggles__button slider-toggles__button--active" type="button">1</button>
@@ -174,15 +205,15 @@
                   <th class="pricing-table__header-data pricing-table__header-data--empty">
                   </th>
                   <th class="pricing-table__header-data">
-                    <h3 class="pricing-table__title">База</h3>
+                    <p class="pricing-table__title">База</p>
                     <p class="pricing-table__header-cost">1,99 USD</p>
                   </th>
                   <th class="pricing-table__header-data pricing-table__header-data--hit">
-                    <h3 class="pricing-table__title">Стандарт</h3>
+                    <p class="pricing-table__title">Стандарт</p>
                     <p class="pricing-table__header-cost">3,99 USD</p>
                   </th>
                   <th class="pricing-table__header-data">
-                    <h3 class="pricing-table__title">Анлим</h3>
+                    <p class="pricing-table__title">Анлим</p>
                     <p class="pricing-table__header-cost">9,99 USD</p>
                   </th>
                 </tr>
@@ -192,15 +223,21 @@
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Розовый фильтр</p>
-                    <span class="pricing-table__image pricing-table__image--yes"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Розовый фильтр</p>
-                    <span class="pricing-table__image pricing-table__image--yes"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Розовый фильтр</p>
-                    <span class="pricing-table__image pricing-table__image--yes"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                   </td>
                 </tr>
                 <tr class="pricing-table__row">
@@ -209,15 +246,21 @@
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Смайлики</p>
-                    <span class="pricing-table__image pricing-table__image--no"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Смайлики</p>
-                    <span class="pricing-table__image pricing-table__image--yes"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Смайлики</p>
-                    <span class="pricing-table__image pricing-table__image--yes"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                   </td>
                 </tr>
                 <tr class="pricing-table__row">
@@ -226,15 +269,21 @@
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Комментарии</p>
-                    <span class="pricing-table__image pricing-table__image--no"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Комментарии</p>
-                    <span class="pricing-table__image pricing-table__image--no"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>
                   </td>
                   <td class="pricing-table__data">
                     <p class="pricing-table__text">Комментарии</p>
-                    <span class="pricing-table__image pricing-table__image--yes"></span>
+                    <svg class="pricing-table__image" width="30" height="30">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                   </td>
                 </tr>
               </table>
@@ -267,31 +316,48 @@
               </ul>
             </div>
           </div>
-          <div class="contacts__map"></div>
+          <div class="contacts__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad2d8304ee4657a7fdf92b1673ad7c5b7dd6de4ec37f18e8d16796e4e2af04efb&amp;source=constructor">
+            </iframe>
+          </div>
         </section>
       </main>
       <footer class="page-footer page-footer--index">
         <a class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" width="140px" height="50px" alt="Логотип">
-          </picture>
+          <svg width="147" height="41" fill="#283645">
+            <use class="page-footer__logo--mobile" xlink:href="#logo-pink-blue-mobile"></use>
+            <use class="page-footer__logo--desktop" xlink:href="#logo-pink-blue-desktop"></use>
+          </svg>
         </a>
         <ul class="socials page-footer__socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="#" target="_blank" rel="noopener noreferrer"></a>
+            <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="15">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="#" target="_blank" rel="noopener noreferrer"></a>
+            <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="8" height="19">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#" target="_blank" rel="noopener noreferrer"></a>
+            <a class="socials__link socials__link--youtube" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="15" height="14">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <div class="page-footer__developers">
           <span>Разработано</span>
-          <a class="page-footer__developers-logo" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="img/logo-htmlacademy.svg" width="27px" height="45px" alt="Логотип">
+          <a class="page-footer__developers-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+            <svg width="40" height="40" fill="#d22856">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>
