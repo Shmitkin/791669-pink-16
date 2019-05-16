@@ -25,35 +25,36 @@
   text-align: center;
   color: #d22856;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .form-achievements__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 20px 23px 20px;
+  padding: 43px 20px 23px 20px;
 }
 
-.form-achievements__checkbox {
-  position: relative;
+.form-achievements__checkbox-container {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 52px;
 
-  width: 38px;
-  height: 38px;
-  margin: 0 31px 0 0;
-  padding: 0;
+}
 
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 2px;
-  outline: none;
+.form-achievements__label {
 
-  appearance: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 
-  &:checked::before {
+  &::before {
+    display: none;
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: -4px;
+    left: 0;
+    z-index: 10;
 
     width: 38px;
     height: 38px;
@@ -61,30 +62,56 @@
     background: url("../img/check-mark.png") no-repeat 50% 50%;
   }
 
-  &:hover,
-  &:focus {
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    z-index: 5;
+
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+
+    &:hover::after,
+    &:focus::after {
+      border-color: #283645;
+    }
+
+    &:active::after {
+      border-color: #d22856;
+    }
+}
+
+.form-achievements__checkbox {
+  position: absolute;
+  top: -4px;
+  left: 0px;
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  outline: none;
+  opacity: 0;
+
+  &:checked + .form-achievements__label::before {
+    display: block;
+  }
+
+  &:focus + .form-achievements__label::after {
     border-color: #283645;
   }
 
-  &:active {
+  &:active + .form-achievements__label::after {
     border-color: #d22856;
-  }
-}
-
-.form-achievements__label {
-  position: relative;
-
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-bottom: 44px;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-
-  &:last-child {
-    margin-bottom: 20px;
   }
 }
 
@@ -105,14 +132,19 @@
 
   .form-achievements__container {
     padding-left: 52px;
-  }
-
-  .form-achievements__checkbox {
-    margin-right: 21px;
+    padding-top: 43px;
   }
 
   .form-achievements__legend {
     width: 435px;
+  }
+
+  .form-achievements__checkbox-container {
+    padding-left: 59px;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -128,15 +160,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    padding: 39px 0 7px 51px;
+    padding: 43px 0 3px 51px;
   }
 
-  .form-achievements__label {
+  .form-achievements__checkbox-container {
     justify-content: flex-end;
     width: 260px;
 
     &:last-child {
       order: 6;
+      margin-bottom: 52px;
     }
 
     &:nth-child(4) {

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Пинк - фотогалерея</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -63,9 +64,11 @@
                 <cite class="photo__author">Анна</cite>
                 <time datetime="2019" class="photo__time">(5 минут назад)</time>
                 <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <button class="photo__like-button">нравится:
-                  <span class="photo__like-count">215</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">215</span>
+                </div>
               </blockquote>
             </li>
             <li class="photo__item">
@@ -81,9 +84,11 @@
                 <cite class="photo__author">Левон</cite>
                 <time datetime="2019" class="photo__time">(5 часов назад)</time>
                 <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <button class="photo__like-button">нравится:
-                    <span class="photo__like-count">356</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">356</span>
+                </div>
               </blockquote>
             </li>
             <li class="photo__item">
@@ -99,9 +104,11 @@
                 <cite class="photo__author">Антон</cite>
                 <time datetime="2019" class="photo__time">(12 часов назад)</time>
                 <p class="photo__text">Соседи будут рады!</p>
-                <button class="photo__like-button">нравится:
-                    <span class="photo__like-count">666</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">666</span>
+                </div>
               </blockquote>
             </li>
             <li class="photo__item">
@@ -117,9 +124,11 @@
                 <cite class="photo__author">Борис</cite>
                 <time datetime="2019" class="photo__time">(20 часов назад)</time>
                 <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button class="photo__like-button">нравится:
-                    <span class="photo__like-count">215</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">215</span>
+                </div>
               </blockquote>
             </li>
             <li class="photo__item">
@@ -135,9 +144,11 @@
                 <cite class="photo__author">Сергей</cite>
                 <time datetime="2019" class="photo__time">(25 часов назад)</time>
                 <p class="photo__text">Самая кубанская в мире!</p>
-                <button class="photo__like-button">нравится:
-                    <span class="photo__like-count">4</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">4</span>
+                </div>
               </blockquote>
             </li>
             <li class="photo__item">
@@ -153,9 +164,11 @@
                 <cite class="photo__author">Максим</cite>
                 <time datetime="2019" class="photo__time">(40 часов назад)</time>
                 <p class="photo__text">Где снег-то?</p>
-                <button class="photo__like-button">нравится:
-                    <span class="photo__like-count">150</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">150</span>
+                </div>
               </blockquote>
             </li>
             <li class="photo__item">
@@ -171,9 +184,11 @@
                 <cite class="photo__author">Надежда</cite>
                 <time datetime="2019" class="photo__time">(45 часов назад)</time>
                 <p class="photo__text">Всем GM и взаимные лайки!</p>
-                <button class="photo__like-button">нравится:
-                    <span class="photo__like-count">2560</span>
-                </button>
+                <div class="photo__like-count">
+                  <button class="photo__like-button"></button>
+                  <span class="photo__like-text">нравится:</span>
+                  <span class="photo__like-number">2563</span>
+                </div>
               </blockquote>
             </li>
           </ul>
@@ -298,5 +313,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
