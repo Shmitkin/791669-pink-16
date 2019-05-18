@@ -31,14 +31,6 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("normalize", function () {
-  return gulp.src("source/css/normalize.css")
-    .pipe(plumber())
-    .pipe(csso())
-    .pipe(rename("normalize.min.css"))
-    .pipe(gulp.dest("build/css"));
-});
-
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -121,5 +113,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "normalize", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

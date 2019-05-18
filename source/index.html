@@ -2,13 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -31,7 +27,7 @@
             </a>
             <button class="page-header__nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
           </div>
-          <nav class="main-nav">
+          <nav class="page-header__main-nav main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link main-nav__link--active">Главная</a>
@@ -68,7 +64,7 @@
             <div class="promo__buttons-container">
               <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
               <a class="promo__download-button" href="https://www.apple.com/ru/ios/app-store/" target="_blank" rel="noopener noreferrer">Скачать приложение</a>
-              <ul class="promo-icons">
+              <ul class="promo__icons promo-icons">
                 <li class="promo-icons__item">
                   <a class="promo-icons__link" href="https://www.apple.com/ru/ios/app-store/" target="_blank" rel="noopener noreferrer">
                     <svg width="47" height="57">
@@ -95,7 +91,7 @@
             </div>
           </div>
         </div>
-        <section class="advantages">
+        <section class="page-main__advantages advantages">
           <div class="advantages__container">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <p class="advantages__main-title">Устали от серости мегаполиса?</p>
@@ -166,7 +162,7 @@
             </div>
           </div>
           </section>
-          <section class="reviews">
+          <section class="page-main__reviews reviews">
             <div class="reviews__container">
             <h2 class="visually-hidden">Отзывы наших пользователей</h2>
             <div class="reviews__quotes">
@@ -203,11 +199,11 @@
             </p>
           </div>
         </section>
-        <section class="pricing">
+        <section class="page-main__pricing pricing">
           <div class="pricing__container">
             <h2 class="visually-hidden">Наши тарифы</h2>
             <div class="pricing__wrapper">
-              <table class="pricing-table">
+              <table class="pricing__pricing-table pricing-table">
                 <tr class="pricing-table__header-row">
                   <th class="pricing-table__header-data pricing-table__header-data--empty">
                   </th>
@@ -302,7 +298,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="page-main__contacts contacts">
           <div class="contacts__container">
             <h2 class="visually-hidden">Контакты</h2>
             <div class="contacts__wrapper">
