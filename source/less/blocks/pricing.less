@@ -3,8 +3,8 @@
 
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
-  background-size: 100% 26px;
   background-repeat: no-repeat;
+  background-size: 100% 26px;
 }
 
 .pricing__container {
@@ -37,6 +37,8 @@
 
 .pricing-table__header-row {
   display: flex;
+
+  border-left: 2px solid rgba(255, 255, 255, 0);
 }
 
 .pricing-table__header-data {
@@ -54,6 +56,11 @@
 
   background-color: #283645;
   border-right: 2px solid #ffffff;
+
+  &:last-child,
+  &:first-child {
+    border-right: 2px solid #283645;
+  }
 }
 
 .pricing-table__header-data--hit {
@@ -161,7 +168,7 @@
   }
 
   .pricing__wrapper {
-    min-height: initial;
+    min-height: 0;
   }
 
   .pricing-table {
@@ -214,7 +221,7 @@
   }
 
   .pricing-table__header-data {
-    width: 156px;
+    width: 155px;
     height: 78px;
     padding: 0;
     padding-top: 18px;
@@ -229,8 +236,9 @@
 @media (min-width: @desktop-width) {
   .pricing {
     margin-bottom: 65px;
-    background-size: 100% 82px;
     padding-top: 36px;
+
+    background-size: 100% 82px;
   }
 
   .pricing__container {
@@ -266,8 +274,9 @@
   }
 
   .pricing-table__title {
-    font-size: 18px;
     margin-bottom: 10px;
+
+    font-size: 18px;
   }
 
   .pricing-table__header-cost {

@@ -54,9 +54,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 280px;
   min-height: 121px;
   margin: 0;
-  padding: 20px 10px 20px 17px;
+  padding: 21px 10px 20px 17px;
 
   background-color: #f2f2f2;
 }
@@ -64,7 +65,7 @@
 .photo__author {
   display: flex;
   margin-right: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 
   font-style: normal;
   font-weight: 700;
@@ -74,7 +75,7 @@
 
 .photo__time {
   display: flex;
-  margin-top: 2px;
+  margin-top: 3px;
   margin-right: 10px;
 
   font-weight: 300;
@@ -84,7 +85,7 @@
 }
 
 .photo__text {
-  display: flex;
+  width: 100%;
   margin: 0 0 10px 0;
 
   font-weight: 400;
@@ -92,12 +93,15 @@
   line-height: 24px;
 }
 
-.photo__like-button {
-  position: relative;
+.photo__like-count {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
-  width: 200px;
+.photo__like-text,
+.photo__like-number {
   padding: 0;
-  padding-left: 33px;
 
   font-weight: 400;
   font-size: 12px;
@@ -108,19 +112,24 @@
 
   background: none;
   border: none;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 2px;
+.photo__like-text {
+  margin-right: 3px;
+}
 
-    display: block;
-    width: 13px;
-    height: 13px;
+.photo__like-button {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 0 20px 2px 0;
+  padding: 0;
 
-    background: url("../img/icon-heart.svg") no-repeat;
-  }
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
 }
 
 
@@ -157,53 +166,58 @@
 
   .photo__review {
     align-content: flex-start;
+    width: 300px;
     min-height: 155px;
-    padding: 26px 20px 15px 28px;
-  }
-
-  .photo__like-button {
-    margin-left: 0;
-    padding: 0;
-
-    &::before {
-      top: 5px;
-      left: 227px;
-    }
+    padding: 28px 20px 15px 28px;
   }
 
   .photo__item--panorama {
     width: 620px;
     margin-bottom: 51px;
 
-    &::before {
-      top: 57px;
-    }
-
     & img {
       width: 660px;
       height: 509px;
     }
 
-    & .photo__like-button::before {
-      top: 4px;
-      left: 178px;
+    & .photo__author {
+      order: 1;
     }
 
-    & .photo__like-button {
-      margin-left: auto;
-      padding-right: 36px;
-
-      text-align: right;
+    & .photo__time {
+      order: 2;
     }
 
     & .photo__text {
-      order: 2;
+      order: 4;
       margin: 0 0 0 0;
     }
 
     & .photo__review {
+      width: 620px;
       min-height: 120px;
     }
+
+    & .photo__like-count {
+      order: 3;
+      width: 128px;
+      margin-top: -4px;
+      margin-left: auto;
+    }
+
+    & .photo__like-button {
+      margin-right: 9px;
+    }
+
+    &::before {
+      top: 57px;
+    }
+  }
+
+  .photo__like-button {
+    order: 3;
+    margin-right: 12px;
+    margin-left: auto;
   }
 }
 
@@ -229,17 +243,23 @@
       min-height: initial;
     }
 
-    &::before {
-      top: 54px;
-    }
-
     & img {
       width: 1200px;
       height: 505px;
     }
 
     & .photo__review {
+      width: 940px;
       min-height: 100px;
+    }
+
+    & .photo__like-count {
+      margin-top: -2px;
+      margin-right: 3px;
+    }
+
+    &::before {
+      top: 54px;
     }
   }
 
