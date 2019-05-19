@@ -19,7 +19,6 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "normalize.css": "^8.0.1",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -46,9 +45,5 @@
   ],
   "engines": {
     "node": "8.15"
-  },
-  "dependencies": {
-    "cwebp": "^2.0.3",
-    "normalize.less": "^1.0.0"
   }
 }
