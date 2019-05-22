@@ -15,6 +15,11 @@
   background-color: #1d2631;
   background-position-y: 0;
   background-size: 100% auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .page-form__title {
@@ -25,7 +30,7 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #ffffff;
+  color: @white;
 }
 
 .page-form__description-wrapper {
@@ -33,7 +38,7 @@
   margin-bottom: 14px;
   padding: 20px 20px;
 
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .page-form__description {
@@ -43,21 +48,26 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-}
 
-.page-form__description--optional {
-  display: none;
+  & span {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-form__title-wrapper {
     margin-top: -110px;
-    margin-bottom: 42px;
+    margin-bottom: 72px;
     padding: 180px 20px 79px 20px;
 
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position-x: 50%;
     background-position-y: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .page-form__description {
@@ -65,12 +75,11 @@
     margin: 0 auto;
 
     font-size: 18px;
-  }
 
-  .page-form__description--optional {
-    display: initial;
+    & span {
+      display: initial;
+    }
   }
-
 
   .page-form__title {
     width: 600px;
@@ -81,7 +90,7 @@
 
   .page-form__description-wrapper {
     width: 660px;
-    padding: 50px 20px;
+    margin-bottom: 52px;
   }
 }
 
@@ -93,6 +102,11 @@
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position-x: 50%;
     background-position-y: 110px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 
   .page-form__title {
@@ -102,8 +116,8 @@
   }
 
   .page-form__description-wrapper {
-    width: 1200px;
-    padding: 20px 130px;
+    width: 960px;
+    margin-bottom: 64px;
   }
 
   .page-form__description {

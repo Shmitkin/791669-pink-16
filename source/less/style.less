@@ -1,70 +1,5 @@
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-picture {
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-}
-
-/*Подключаем нестандартные шрифты*/
-
-@font-face {
-  font-style: light;
-  font-weight: 300;
-  font-family: "OpenSans";
-
-  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "OpenSans";
-
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-style: bold;
-  font-weight: 700;
-  font-family: "OpenSans";
-
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-}
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-weight: 400;
-  font-size: 14px;
-  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-}
-
 @import "variables.less";
+@import "scaffolding.less";
 @import "blocks/slider-toggles";
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
@@ -73,6 +8,7 @@ body {
 @import "blocks/advantages.less";
 @import "blocks/reviews.less";
 @import "blocks/pricing.less";
+@import "blocks/pricing-table.less";
 @import "blocks/contacts.less";
 @import "blocks/page-photo.less";
 @import "blocks/photo.less";

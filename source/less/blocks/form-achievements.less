@@ -1,16 +1,14 @@
 
 .form-achievements {
-  order: 2;
   width: 320px;
-  margin-bottom: 31px;
   padding-top: 38px;
 
-  background-color: #f2f2f2;
+  background-color: @light-gray;
 }
 
 .form-achievements__fieldset {
   margin: 0;
-  padding: 0;
+  padding: 43px 20px 47px;
 
   border: none;
 }
@@ -24,7 +22,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #d22856;
+  color: @pink;
   text-transform: uppercase;
 }
 
@@ -32,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 43px 20px 23px 20px;
 }
 
 .form-achievements__checkbox-container {
@@ -42,7 +39,7 @@
   padding-left: 70px;
 
   &:last-child {
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 }
 
@@ -62,7 +59,8 @@
     width: 38px;
     height: 38px;
 
-    background: url("../img/check-mark.png") no-repeat 50% 50%;
+    background: url("../img/check-mark.svg") no-repeat 50% 50%;
+    background-size: 22px 16px;
   }
 
   &::after {
@@ -76,17 +74,17 @@
     height: 38px;
     padding: 0;
 
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
+    background-color: @white;
+    border: 2px solid @gray;
     border-radius: 2px;
   }
 
   &:hover::after {
-    border-color: #283645;
+    border-color: @dark-blue;
   }
 
   &:active::after {
-    border-color: #d22856;
+    border-color: @pink;
   }
 }
 
@@ -99,8 +97,8 @@
   height: 38px;
   padding: 0;
 
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  background-color: @white;
+  border: 2px solid @gray;
   border-radius: 2px;
   outline: none;
   opacity: 0;
@@ -110,32 +108,26 @@
   }
 
   &:focus + .form-achievements__label::after {
-    border-color: #283645;
+    border-color: @dark-blue;
   }
 
   &:active + .form-achievements__label::after {
-    border-color: #d22856;
+    border-color: @pink;
   }
 }
 
 @media (min-width: @tablet-width) {
   .form-achievements {
-    order: 4;
     width: 620px;
-    margin-bottom: 57px;
+    padding-top: 0;
 
     background: none;
   }
 
   .form-achievements__fieldset {
-    padding: 5px 7px;
+    padding: 48px 58px 53px;
 
-    border: 2px solid #e5e5e5;
-  }
-
-  .form-achievements__container {
-    padding-top: 43px;
-    padding-left: 52px;
+    border: 2px solid @gray;
   }
 
   .form-achievements__legend {
@@ -144,10 +136,6 @@
 
   .form-achievements__checkbox-container {
     padding-left: 59px;
-
-    &:last-child {
-      margin-bottom: 25px;
-    }
   }
 }
 
@@ -158,17 +146,19 @@
     background: none;
   }
 
+  .form-achievements__fieldset {
+    padding: 48px 60px 8px 58px;
+  }
+
   .form-achievements__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    padding: 43px 0 3px 51px;
   }
 
   .form-achievements__checkbox-container {
-    justify-content: flex-end;
-    width: 260px;
+    justify-content: flex-start;
 
     &:last-child {
       order: 6;
@@ -177,10 +167,19 @@
 
     &:nth-child(4) {
       order: 5;
+      margin-left: 32px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 3px;
     }
 
     &:nth-child(2) {
       order: 4;
+    }
+
+    &:nth-child(5) {
+      margin-right: 4px;
     }
   }
 }

@@ -7,8 +7,8 @@
   font-size: 0;
   color: transparent;
 
-  background-color: #bec2c7;
-  border: 3px solid #ffffff;
+  background-color: @dark-gray;
+  border: 3px solid @white;
   border-radius: 6px;
   outline: none;
 
@@ -19,29 +19,18 @@
   &:active {
     background-color: #e9ebec;
   }
+
+  &--active {
+    background-color: @white;
+    border: 3px solid @dark-blue;
+    border-radius: 6px;
+  }
 }
 
 .slider-toggles {
   display: flex;
   justify-content: space-between;
-  width: 62px;
+  min-width: 62px;
   margin: 0;
   padding: 0;
-}
-
-.slider-toggles__button--active {
-  background-color: #ffffff;
-  border: 3px solid #283645;
-  border-radius: 6px;
-}
-
-
-.pricing__toggles .slider-toggles__button {
-  border: 3px solid #f2f2f2;
-}
-
-.pricing__toggles .slider-toggles__button--active {
-  background-color: #ffffff;
-  border: 3px solid #283645;
-  border-radius: 6px;
 }

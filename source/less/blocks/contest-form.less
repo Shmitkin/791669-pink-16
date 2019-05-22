@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 320px;
-  margin-bottom: 5px;
+  margin-bottom: 11px;
 }
 
 .contest-form__title {
@@ -14,18 +14,19 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: @dark-blue;
 }
 
 .contest-form__submit {
   width: 280px;
-  height: 63px;
+  min-height: 63px;
   margin-bottom: 21px;
+  padding: 10px 20px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
 
   background-color: #2aab6d;
@@ -43,17 +44,19 @@
   }
 
   &--disabled {
-    background-color: #e5e5e5;
+    background-color: @gray;
   }
 }
 
 .contest-form__required {
-  margin-bottom: 20px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  & span {
+    display: none;
+  }
 }
 
 .contest-form__button-container {
@@ -64,15 +67,35 @@
   width: 320px;
 }
 
-.contest-form__required--optional {
-  display: none;
+.contest-form__full-name {
+  order: 1;
+  margin-bottom: 42px;
+}
+
+.contest-form__achievements {
+  order: 2;
+  margin-bottom: 31px;
+}
+
+.contest-form__contacts {
+  order: 3;
+  margin-bottom: 42px;
+}
+
+.contest-form__platform {
+  order: 4;
+  margin-bottom: 38px;
+}
+
+.contest-form__review {
+  order: 5;
+  margin-bottom: 44px;
 }
 
 @media (min-width: @tablet-width) {
   .contest-form {
     width: 660px;
     margin-bottom: 58px;
-    padding-top: 7px;
   }
 
   .contest-form__button-container {
@@ -84,6 +107,35 @@
   .contest-form__submit {
     width: 300px;
     margin-bottom: 10px;
+  }
+
+  .contest-form__required {
+    margin-top: 7px;
+  }
+
+  .contest-form__full-name {
+    order: 1;
+    margin-bottom: 57px;
+  }
+
+  .contest-form__achievements {
+    order: 4;
+    margin-bottom: 57px;
+  }
+
+  .contest-form__contacts {
+    order: 3;
+    margin-bottom: 57px;
+  }
+
+  .contest-form__platform {
+    order: 2;
+    margin-bottom: 57px;
+  }
+
+  .contest-form__review {
+    order: 5;
+    margin-bottom: 44px;
   }
 }
 
@@ -101,7 +153,13 @@
     width: 940px;
   }
 
-  .contest-form__required--optional {
-    display: initial;
+  .contest-form__required {
+    & span {
+      display: initial;
+    }
+  }
+
+  .contest-form__platform {
+    margin-top: -6px;
   }
 }
