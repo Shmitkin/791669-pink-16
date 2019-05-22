@@ -13,7 +13,7 @@
   width: 320px;
   padding: 20px 22px 32px 19px;
 
-  background-color: #f2f2f2;
+  background-color: @light-gray;
 }
 
 .post-form__title {
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-between;
   width: 235px;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 23px auto;
 
   text-align: center;
 }
@@ -68,6 +68,8 @@
 
   & svg {
     opacity: 0.3;
+
+    fill: @dark-blue;
   }
 
   &:hover svg,
@@ -79,7 +81,7 @@
   &--active svg {
     opacity: 1;
 
-    fill: #d22856;
+    fill: @pink;
   }
 }
 
@@ -111,10 +113,10 @@
     width: 100%;
     height: 2px;
 
-    background-color: #283645;
+    background-color: @dark-blue;
   }
 
-  &--circle {
+  & span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,13 +126,13 @@
     height: 14px;
     margin-top: -6px;
 
-    background-color: #f2f2f2;
-    border: 2px solid #d22856;
+    background-color: @light-gray;
+    border: 2px solid @pink;
     border-radius: 15px;
   }
 
-  &--circle:active {
-    background-color: #d22856;
+  & span:active {
+    background-color: @pink;
   }
 }
 
@@ -138,23 +140,23 @@
   display: block;
   width: 280px;
   margin-bottom: 10px;
-  padding: 15px 36px 15px 36px;
+  padding: 14px 36px 15px 36px;
 
   font-weight: 700;
   font-size: 18px;
-  color: #d22856;
+  color: @pink;
   text-decoration: none;
 
-  background-color: #f2f2f2;
-  border: 3px solid #d22856;
+  background-color: @light-gray;
+  border: 3px solid @pink;
   border-radius: 30px;
   outline: none;
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: @white;
 
-    background-color: #d22856;
+    background-color: @pink;
   }
 
   &:active {
@@ -203,6 +205,10 @@
   padding-bottom: 34px;
 
   border-bottom: 1px solid #dddfe0;
+
+  & svg {
+    fill: @pink;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -302,7 +308,7 @@
   }
 
   .post-form {
-    margin-bottom: 77px;
+    margin-bottom: 80px;
   }
 
   .post-form__container {

@@ -1,6 +1,7 @@
 .reviews {
-  background-color: #ffffff;
   margin-bottom: 42px;
+
+  background-color: @white;
 }
 
 .reviews__container {
@@ -20,15 +21,15 @@
 
   list-style: none;
 
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .reviews__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
   width: 100%;
+  padding: 0 20px;
 }
 
 .reviews__wrapper {
@@ -56,13 +57,13 @@
 }
 
 .reviews__text {
+  width: 100%;
   margin: 0;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  width: 100%;
 }
 
 .reviews__quotes {
@@ -75,6 +76,32 @@
 
 .reviews__arrow {
   display: none;
+  width: 22px;
+  height: 42px;
+  margin-top: 27px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0;
+
+  font-size: 0;
+  color: transparent;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  & svg {
+    fill: @dark-gray;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #7e868f;
+  }
+
+  &:active svg {
+    fill: #e9ebec;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -138,28 +165,6 @@
 
   .reviews__arrow {
     display: block;
-    width: 22px;
-    height: 42px;
-    margin-top: 27px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 0;
-
-    font-size: 0;
-    color: transparent;
-
-    background: none;
-    border: none;
-    outline: none;
-
-    &:hover svg,
-    &:focus svg {
-      fill: #7e868f;
-    }
-
-    &:active svg {
-      fill: #e9ebec;
-    }
   }
 
   .reviews__wrapper {

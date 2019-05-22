@@ -1,7 +1,7 @@
 .advantages {
   margin-bottom: 42px;
 
-  background-color: #f2f2f2;
+  background-color: @light-gray;
   background-image: linear-gradient(174deg, white 24%, transparent 24%);
 }
 
@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 280px;
   margin: 0 0 41px 0;
   padding: 0;
 
@@ -78,8 +78,10 @@
   width: auto;
 }
 
-.advantages__image-item--disabled {
-  display: none;
+.advantages__image-item {
+  &--disabled {
+    display: none;
+  }
 }
 
 .advantages__title {
@@ -150,6 +152,7 @@
 
   .advantages__text-list {
     align-items: flex-start;
+    width: 320px;
     margin: 28px 0 0 0;
     padding: 0;
   }

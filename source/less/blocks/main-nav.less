@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
 
-  background-color: #283645;
+  background-color: @dark-blue;
 
   &--close {
     display: none;
@@ -33,7 +33,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -41,17 +41,15 @@
 
   &:hover,
   &:focus {
-    color: #d22856;
+    color: @pink;
   }
 
   &:active {
-    color: #ffffff;
-
     opacity: 0.3;
   }
 
   &--active:hover {
-    color: #ffffff;
+    color: @white;
   }
 
   &--active:active {
@@ -61,14 +59,18 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    background-color: transparent;
     display: flex;
+
+    background-color: transparent;
   }
 
   .main-nav__list {
     flex-direction: row;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px 0;
     padding-right: 9px;
+    padding-left: 0;
   }
 
   .main-nav__link {
@@ -76,6 +78,10 @@
     text-transform: none;
 
     border: none;
+
+    &:active {
+      color: @white;
+    }
   }
 
   .main-nav__item {
@@ -85,7 +91,7 @@
     border: none;
 
     &--active {
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid @white;
     }
   }
 }

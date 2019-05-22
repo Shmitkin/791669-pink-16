@@ -10,7 +10,7 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: @dark-blue;
 }
 
 .contacts__list {
@@ -48,23 +48,24 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: @dark-blue;
   text-decoration: none;
 
   &--mail {
-    color: #d22856;
+    color: @pink;
 
     outline: none;
 
     &:hover,
     &:focus {
-      color: #283645;
+      color: @dark-blue;
       text-decoration: underline;
     }
 
     &:active {
-      color: #ced0d2;
       text-decoration: none;
+
+      opacity: 0.3;
     }
   }
 }
@@ -140,6 +141,7 @@
   .contacts__item {
     width: 250px;
     margin-bottom: 44px;
+    padding: 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -200,8 +202,10 @@
     margin-bottom: 20px;
   }
 
-  .contacts__item:nth-child(2) {
-    order: 3;
+  .contacts__item {
+    &:nth-child(2) {
+      order: 3;
+    }
   }
 
   .contacts__map {

@@ -1,7 +1,7 @@
 .pricing {
   margin-bottom: 42px;
 
-  background-color: #f2f2f2;
+  background-color: @light-gray;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100% 26px;
@@ -24,130 +24,19 @@
   min-height: 363px;
 }
 
-.pricing-table {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: -696px;
-}
-
-.pricing-table__header-row {
-  display: flex;
-
-  border-left: 2px solid rgba(255, 255, 255, 0);
-}
-
-.pricing-table__header-data {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 278px;
-  height: 98px;
-  margin: 0;
-  padding: 16px 0 20px 0;
-  padding-top: 16px;
-
-  background-color: #283645;
-  border-right: 2px solid #ffffff;
-
-  &:last-child,
-  &:first-child {
-    border-right: 2px solid #283645;
-  }
-}
-
-.pricing-table__header-data--hit {
-  overflow: hidden;
-
-  &::before {
-    content: "хит";
-    position: absolute;
-    top: 12px;
-    left: -27px;
-
-    width: 100px;
-    height: 30px;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-    color: white;
-    text-transform: uppercase;
-
-    background-color: #d22856;
-    transform: rotate(-45deg);
-  }
-}
-
-.pricing-table__row {
-  display: flex;
-
-  border-bottom: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
-}
-
-.pricing-table__text {
-  margin: 0;
-  padding: 0;
-}
-
-.pricing-table__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 278px;
-  height: 59px;
-  padding: 0 17px 0 22px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
-  border-right: 2px solid #e5e5e5;
-}
-
-.pricing-table__data--first {
-  border-top: 2px solid #e5e5e5;
-}
-
-.pricing-table__title {
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
 .pricing__toggles {
   margin: 0;
 }
 
-.pricing-table__header-cost {
-  margin: 0;
-  padding: 0;
+.pricing__toggles__button {
+  border: 3px solid @light-gray;
 
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
+  &--active {
+    background-color: @white;
+    border: 3px solid @dark-blue;
+    border-radius: 6px;
+  }
 }
-
-.pricing-table__image {
-  width: 30px;
-  height: 30px;
-}
-
 
 @media (min-width: @tablet-width) {
   .pricing {
@@ -170,67 +59,6 @@
   .pricing__wrapper {
     min-height: 0;
   }
-
-  .pricing-table {
-    position: static;
-
-    width: 620px;
-    margin-left: 0;
-  }
-
-  .pricing-table__title {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .pricing-table__header-cost {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .pricing-table__text--main {
-    width: 120px;
-    margin: 0;
-    padding: 0;
-
-    text-align: left;
-    text-transform: none;
-  }
-
-  .pricing-table__header-data--hit::before {
-    top: 5px;
-    left: -29px;
-
-    height: 29px;
-
-    font-weight: 300;
-  }
-
-
-  .pricing-table__text {
-    display: none;
-  }
-
-  .pricing-table__data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 155px;
-    height: 45px;
-    padding: 0;
-  }
-
-  .pricing-table__header-data {
-    width: 155px;
-    height: 78px;
-    padding: 0;
-    padding-top: 18px;
-    padding-bottom: 13px;
-  }
-
-  .pricing-table__header-data--empty {
-    background: none;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -245,49 +73,5 @@
     width: 960px;
     padding-top: 113px;
     padding-bottom: 96px;
-  }
-
-  .pricing-table__data {
-    width: 235px;
-    height: 59px;
-  }
-
-  .pricing-table__header-data {
-    width: 235px;
-    height: 97px;
-    padding-top: 21px;
-    padding-bottom: 25px;
-  }
-
-  .pricing-table__header-data--hit::before {
-    top: 13px;
-    left: -34px;
-
-    width: 120px;
-    height: 28px;
-
-    font-weight: 300;
-  }
-
-  .pricing-table {
-    width: 940px;
-  }
-
-  .pricing-table__title {
-    margin-bottom: 10px;
-
-    font-size: 18px;
-  }
-
-  .pricing-table__header-cost {
-    font-size: 24px;
-  }
-
-  .pricing-table__text--main {
-    width: 189px;
-
-    font-size: 18px;
-    text-align: left;
-    text-transform: none;
   }
 }
