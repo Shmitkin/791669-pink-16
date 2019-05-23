@@ -48,6 +48,8 @@
 }
 
 .page-footer__developers {
+  position: relative;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -57,30 +59,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: @dark-blue;
+  text-decoration: none;
+
+  outline: none;
 
   & span {
     margin-top: -5px;
     margin-right: 14px;
   }
-}
 
-.page-footer__developers-logo {
-  position: relative;
-
-  margin-top: 9px;
-
-  outline: none;
-
-  & svg {
-    fill: @pink;
-  }
-
-  &:hover svg,
-  &:focus svg {
+  &:hover .page-footer__developers-logo,
+  &:focus .page-footer__developers-logo {
     fill: @dark-blue;
   }
 
-  &:active {
+  &:active .page-footer__developers-logo {
     opacity: 0.3;
   }
 
@@ -89,10 +83,20 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
 
     width: 100%;
     height: 100%;
   }
+}
+
+.page-footer__developers-logo {
+  position: relative;
+  z-index: 5;
+
+  margin-top: 9px;
+
+  fill: @pink;
 }
 
 @media (min-width: @tablet-width) {
@@ -142,13 +146,12 @@
 
   .page-footer__developers {
     width: 163px;
-    margin-right: -3px;
+
+    font-size: 18px;
 
     & span {
       margin-top: -6px;
       margin-right: 13px;
-
-      font-size: 18px;
     }
   }
 }
