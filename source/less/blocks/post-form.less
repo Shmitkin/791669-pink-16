@@ -209,35 +209,29 @@
   & svg {
     fill: @pink;
   }
+
+  &:nth-child(1) {
+    & span {
+      left: 72%;
+    }
+  }
+
+  &:nth-child(2) {
+    & span {
+      left: 12%;
+    }
+  }
+
+  &:nth-child(3) {
+    & span {
+      left: 47%;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .post-form {
     margin-bottom: 15px;
-  }
-
-  .post-form__adjustment-item {
-    &:nth-child(1) svg {
-      width: 24px;
-      height: 24px;
-      margin-right: auto;
-      margin-left: 2px;
-    }
-
-    &:nth-child(2) svg {
-      width: 24px;
-      height: 22px;
-      margin-top: 8px;
-      margin-right: auto;
-      margin-left: 3px;
-    }
-
-    &:nth-child(3) svg {
-      width: 16px;
-      height: 16px;
-      margin-right: auto;
-      margin-left: 8px;
-    }
   }
 
   .post-form__titles-container {
@@ -246,6 +240,8 @@
   }
 
   .post-form__fieldset {
+    position: relative;
+
     margin-bottom: 49px;
 
     border: none;
@@ -261,7 +257,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 660px;
-    padding: 58px 20px 54px 20px;
+    padding: 56px 20px 53px 20px;
 
     & img {
       width: 300px;
@@ -276,12 +272,50 @@
   }
 
   .post-form__button-wrapper {
-    display: none;
+    position: absolute;
+    top: -8px;
+    left: 27px;
+
+    flex-direction: column;
+    width: 50px;
+  }
+
+  .post-form__button-adjustment {
+    width: 24px;
+    height: 56px;
+    margin: 0 0 16px 0;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+
+      opacity: 1;
+
+      fill: @pink;
+    }
+
+    &:nth-child(2) {
+      padding-top: 5px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 3px;
+
+      & svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &:hover svg,
+    &:focus svg {
+      opacity: 1;
+    }
   }
 
   .post-form__adjustment-container {
     width: 200px;
-    margin: 0;
+    margin: 0 0 0 auto;
 
     &--optional {
       display: none;
@@ -304,7 +338,7 @@
   .post-form__wrapper {
     justify-content: space-around;
     width: 940px;
-    padding: 58px 20px 56px 36px;
+    padding: 55px 20px 56px 36px;
   }
 
   .post-form {
@@ -340,26 +374,54 @@
     padding-right: 26px;
     padding-left: 2px;
 
-    &:nth-child(1) svg {
-      width: 44px;
-      height: 44px;
-      margin-left: 2px;
+    &:nth-child(1) {
+      & span {
+        left: 25%;
+      }
     }
 
-    &:nth-child(2) svg {
-      width: 48px;
-      height: 46px;
+    &:nth-child(2) {
+      & span {
+        left: 86%;
+      }
     }
 
-    &:nth-child(3) svg {
-      width: 34px;
-      height: 34px;
-      margin-top: -1px;
-      margin-left: 7px;
+    &:nth-child(3) {
+      & span {
+        left: 56%;
+      }
     }
   }
 
   .post-form__adjustment-container {
     width: 288px;
+  }
+
+  .post-form__button-wrapper {
+    left: 1px;
+  }
+
+  .post-form__button-adjustment {
+    width: 48px;
+    height: 56px;
+    margin: 0 0 16px 0;
+
+    & svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    &:nth-child(2) {
+      padding-top: 5px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 3px;
+
+      & svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }
