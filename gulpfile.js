@@ -17,6 +17,7 @@ var include = require('posthtml-include');
 var del = require('del');
 var htmlmin = require('gulp-htmlmin');
 var jsmin = require('gulp-uglify');
+var gh_pages = require('gh-pages')
 
 var css = {
   build: function () {
@@ -141,5 +142,11 @@ gulp.task('clean', function () {
   return del('build');
 });
 
+gulp.task('gh_pages', function(done) {
+  gh_pages.publish('build', function(){});
+  done();
+})
+
 gulp.task('build', gulp.series('clean', 'copy', 'css:build', 'js:build', 'sprite', 'html'));
 gulp.task('start', gulp.series('clean', 'copy', 'css:dev', 'js:dev', 'sprite', 'html', 'server'));
+gulp.task('publish', gulp.series('clean', 'copy', 'css:build', 'js:build', 'sprite', 'html', 'gh_pages'));

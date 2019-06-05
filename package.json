@@ -8,6 +8,7 @@
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^4.1.1",
+    "gh-pages": "^2.0.1",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
@@ -30,7 +31,8 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "publish": "gulp publish"
   },
   "browserslist": [
     "last 2 versions",
